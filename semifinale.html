@@ -1,0 +1,2788 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>What Is Matrix (Part One) | RiseTheory — Official Edition</title>
+  <meta name="title" content="What Is Matrix (Part One) | RiseTheory — Official Edition">
+  <meta name="description" content="Seeing your life as one connected whole. Part One of the RiseTheory Trilogy: The 4-layer performance codex unifying Rapid Wealth, Startup Code, Biological Stamina, and Cognitive Armor.">
+  <meta name="author" content="RiseTheory Publishing">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph / Facebook / WhatsApp Meta Tags -->
+  <meta property="og:type" content="book">
+  <meta property="og:site_name" content="RiseTheory">
+  <meta property="og:title" content="What Is Matrix (Part One) | RiseTheory">
+  <meta property="og:description" content="Seeing your life as one connected whole. Stop fighting isolated battles. Discover the unified 4-layer wealth and performance codex.">
+  <meta property="og:image" content="https://placehold.co/1200x630/060606/D4AF37?text=What+Is+Matrix+%E2%80%A2+RiseTheory">
+  <meta property="og:image:alt" content="What Is Matrix 3D Book and E-Book Trilogy Showcase">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Is Matrix (Part One) | RiseTheory">
+  <meta name="twitter:description" content="Seeing your life as one connected whole. The 4-layer unified architecture for rapid wealth, peak stamina, and unyielding mental focus.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/060606/D4AF37?text=What+Is+Matrix+%E2%80%A2+RiseTheory">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cinzel (Luxury Serif), Inter (Sans), Space Grotesk (Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#060606',
+            deepSpace: '#0b0b0e',
+            surface: '#111116',
+            surfaceBorder: '#23232b',
+            gold: {
+              300: '#fae69e',
+              400: '#e5be53',
+              500: '#d4af37',
+              600: '#b89428',
+              700: '#8c6d15'
+            },
+            matrixYellow: '#FBB040',
+            matrixCoral: '#F26756',
+            matrixGreen: '#2FB574',
+            matrixSky: '#4C82FB',
+            matrixCobalt: '#3A68D9',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #060606; }
+    ::-webkit-scrollbar-thumb { background: #23232b; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+
+    /* Ambient Cursor Spotlight */
+    #spotlight {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      transition: background 0.15s ease-out;
+    }
+
+    /* Glassmorphism Styles */
+    .glass-panel {
+      background: rgba(14, 14, 19, 0.82);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(212, 175, 55, 0.45);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.95), 0 0 24px rgba(212, 175, 55, 0.18);
+    }
+
+    /* Navigation Liquid Magnetic Indicator */
+    .nav-indicator {
+      position: absolute;
+      top: 6px;
+      bottom: 6px;
+      border-radius: 0.65rem;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 0 18px rgba(212, 175, 55, 0.22);
+      transition: all 0.32s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* 3D Showcase Multi-Device Spatial Stage */
+    .showcase-stage-3d {
+      perspective: 1400px;
+      transform-style: preserve-3d;
+    }
+    .parallax-layer {
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform 0.18s cubic-bezier(0.2, 0.8, 0.4, 1);
+    }
+
+    /* True 3D Hardcover Book Geometry */
+    .book-3d-wrapper {
+      transform-style: preserve-3d;
+      transform: rotateY(28deg) rotateX(8deg) rotateZ(-3deg);
+    }
+    .book-spine-facet {
+      transform: rotateY(-90deg) translateZ(18px);
+      transform-origin: left center;
+    }
+    .book-top-pages-facet {
+      transform: rotateX(90deg) translateZ(18px);
+      transform-origin: top center;
+    }
+    .book-right-pages-facet {
+      transform: rotateY(90deg) translateZ(282px);
+      transform-origin: right center;
+    }
+
+    /* Ground Studio Reflection Effect */
+    .studio-reflection {
+      transform: scaleY(-1);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0.08) 45%, transparent 85%);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.38) 0%, rgba(0,0,0,0.08) 45%, transparent 85%);
+      filter: blur(2px);
+      opacity: 0.42;
+      pointer-events: none;
+    }
+
+    /* Glowing Matrix Block Accents */
+    .glow-gold { box-shadow: 0 0 20px rgba(251, 176, 64, 0.65); }
+    .glow-coral { box-shadow: 0 0 20px rgba(242, 103, 86, 0.65); }
+    .glow-green { box-shadow: 0 0 20px rgba(47, 181, 116, 0.65); }
+    .glow-sky { box-shadow: 0 0 20px rgba(76, 130, 251, 0.65); }
+    .glow-cobalt { box-shadow: 0 0 20px rgba(58, 104, 217, 0.65); }
+
+    /* View Switcher Animations */
+    .view-container {
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .view-hidden {
+      display: none !important;
+      opacity: 0;
+      transform: scale(0.985) translateY(12px);
+    }
+    .view-active {
+      display: block;
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+
+    /* ANTI-SCREENSHOT & SCREEN RECORDING STYLES */
+    .reader-security-protected {
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      -webkit-touch-callout: none !important;
+    }
+    .reader-security-watermark {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(-25deg);
+      opacity: 0.04;
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.35rem;
+      color: #ffffff;
+      white-space: nowrap;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body class="bg-obsidian text-zinc-100 font-sans min-h-screen selection:bg-gold-500 selection:text-black overflow-x-hidden relative">
+
+  <!-- Interactive Cursor/Pointer Spotlight -->
+  <div id="spotlight"></div>
+
+  <!-- Ambient Space Starfield & Subtle Cosmic Nebulae -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 left-1/4 w-[600px] h-[600px] bg-gold-500/5 rounded-full blur-[170px]"></div>
+    <div class="absolute top-1/2 -right-40 w-[650px] h-[650px] bg-matrixSky/10 rounded-full blur-[180px]"></div>
+    <div class="absolute -bottom-40 left-1/3 w-[550px] h-[550px] bg-matrixCoral/10 rounded-full blur-[160px]"></div>
+    <!-- Fine Grid Overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff04_1px,transparent_1px),linear-gradient(to_bottom,#ffffff04_1px,transparent_1px)] bg-[size:48px_48px] opacity-70"></div>
+  </div>
+
+  <!-- TOP LUXURY ANNOUNCEMENT & BRAND SEAL (ZERO PRICES SHOWN) -->
+  <aside class="relative z-50 bg-gradient-to-r from-obsidian via-[#0f0f15] to-obsidian border-b border-gold-500/30 py-2.5 px-4 text-xs font-mono">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4 text-zinc-300">
+      
+      <!-- Left: Official RiseTheory Seal with 4 Matrix Color Markers -->
+      <div class="flex items-center gap-2.5">
+        <div class="flex items-center gap-1 px-2 py-0.5 rounded-md bg-gold-500/10 border border-gold-500/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-matrixYellow"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-matrixCoral"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-matrixGreen"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-matrixSky"></span>
+        </div>
+        <span class="text-gold-400 font-bold uppercase tracking-widest text-[11px]">RISETHEORY OFFICIAL RELEASE:</span>
+        <span class="text-white font-medium">Part One Available in Hardcover, Paperback & Digital</span>
+      </div>
+
+      <!-- Right: Tracked Express & Navigation Trigger (No Prices) -->
+      <div class="flex items-center gap-3 text-[11px]">
+        <div class="flex items-center gap-1.5 text-zinc-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          <span>Tracked Express Dispatch Available Across India</span>
+        </div>
+        <span class="text-zinc-600 hidden sm:inline">•</span>
+        <span class="text-gold-400 font-medium hidden sm:inline">Launch Multiplier Stack Included</span>
+        <button onclick="switchView('about')" class="text-gold-400 hover:text-gold-300 underline font-bold uppercase tracking-wider ml-1">
+          Explore Codex →
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- APPLICATION SHELL -->
+  <div class="relative z-10 flex flex-col min-h-screen">
+
+    <!-- ========================================================================= -->
+    <!-- FLOATING TOP NAVIGATION BAR (STRICT SEQUENCE WITH LIQUID ANIMATION)       -->
+    <!-- 1. Showcase | 2. About the Book | 3. Reader Login | 4. Place Order | 5. Customer Care -->
+    <!-- ========================================================================= -->
+    <header class="sticky top-4 z-50 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <nav class="glass-panel rounded-2xl px-3 py-2.5 sm:px-5 flex items-center justify-between border border-white/10 shadow-2xl relative">
+        
+        <!-- Left: RiseTheory Luxury Golden Emblem & Brand -->
+        <a href="javascript:void(0)" onclick="switchView('showcase')" class="flex items-center gap-3 group shrink-0">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-gold-400/25 via-gold-500/10 to-black border border-gold-500/40 flex items-center justify-center p-1.5 shadow-[0_0_18px_rgba(212,175,55,0.2)] group-hover:border-gold-400 transition-colors">
+            <!-- RiseTheory Golden Eagle SVG -->
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-gold-400 filter drop-shadow">
+              <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+              <path d="M50 40 C43 52 38 68 35 88 C44 80 50 68 50 55 C50 68 56 80 65 88 C62 68 57 52 50 40 Z" fill="#e5be53" />
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif tracking-[0.25em] text-xs font-bold text-gold-400 group-hover:text-gold-300 transition-colors uppercase">RiseTheory</span>
+            <span class="text-[9px] text-zinc-400 font-mono tracking-widest uppercase">What Is Matrix</span>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Navigation Tabs (Strictly Ordered) -->
+        <div id="navTabsContainer" class="hidden lg:flex items-center relative bg-surface/90 p-1 rounded-xl border border-white/5">
+          <!-- Animated Liquid Magnetic Indicator -->
+          <div id="liquidIndicator" class="nav-indicator opacity-0"></div>
+
+          <!-- 1. Showcase -->
+          <button onclick="switchView('showcase')" id="nav-showcase" class="nav-tab relative z-10 px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-medium text-white transition-colors">
+            Showcase
+          </button>
+          
+          <!-- 2. About the Book -->
+          <button onclick="switchView('about')" id="nav-about" class="nav-tab relative z-10 px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-medium text-zinc-400 hover:text-white transition-colors">
+            About the Book
+          </button>
+
+          <!-- 3. Reader Login -->
+          <button onclick="switchView('reader')" id="nav-reader" class="nav-tab relative z-10 px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-medium text-zinc-400 hover:text-white transition-colors flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-matrixSky"></span>
+            Reader Login
+          </button>
+
+          <!-- 4. Place Order (Strictly after Login) -->
+          <button onclick="switchView('order')" id="nav-order" class="nav-tab relative z-10 px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-semibold text-gold-400 hover:text-gold-300 transition-colors">
+            Place Order
+          </button>
+
+          <!-- 5. Customer Care (Strictly at the very end of everything) -->
+          <button onclick="switchView('support')" id="nav-support" class="nav-tab relative z-10 px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-medium text-zinc-400 hover:text-white transition-colors">
+            Customer Care
+          </button>
+        </div>
+
+        <!-- Right Quick Action: Free Sample + Book Now Triggers -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openLeadMagnetModal()" class="px-3.5 py-2 rounded-xl text-xs font-semibold tracking-wider uppercase text-zinc-300 glass-panel hover:text-white border border-white/10 hover:border-gold-500/40 transition-all">
+            Free Sample
+          </button>
+          <button onclick="switchView('order')" class="px-4 py-2 rounded-xl text-xs font-bold tracking-wider uppercase bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 text-black hover:brightness-110 transition-all shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+            Order Now
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl text-zinc-400 hover:text-white hover:bg-white/5" aria-label="Toggle Navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+
+      </nav>
+
+      <!-- Mobile Dropdown Navigation (Strict Order) -->
+      <div id="mobileMenu" class="hidden lg:hidden mt-2 glass-panel rounded-2xl p-4 border border-white/10 shadow-2xl flex flex-col gap-2">
+        <button onclick="switchView('showcase'); toggleMobileMenu();" class="text-left px-4 py-2.5 rounded-xl text-sm font-medium text-white hover:bg-white/10">1. Showcase</button>
+        <button onclick="switchView('about'); toggleMobileMenu();" class="text-left px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-white/10">2. About the Book</button>
+        <button onclick="switchView('reader'); toggleMobileMenu();" class="text-left px-4 py-2.5 rounded-xl text-sm font-medium text-matrixSky bg-blue-500/10">3. Reader Login</button>
+        <button onclick="switchView('order'); toggleMobileMenu();" class="text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-gold-400 bg-gold-500/10">4. Place Order</button>
+        <button onclick="switchView('support'); toggleMobileMenu();" class="text-left px-4 py-2.5 rounded-xl text-sm font-medium text-zinc-300 hover:bg-white/10">5. Customer Care</button>
+        <div class="pt-2 border-t border-white/10 flex gap-2">
+          <button onclick="openLeadMagnetModal(); toggleMobileMenu();" class="flex-1 py-2 rounded-xl text-xs font-semibold text-zinc-200 glass-panel">Free Chapter 1</button>
+          <button onclick="switchView('order'); toggleMobileMenu();" class="flex-1 py-2 rounded-xl text-xs font-bold text-black bg-gold-400">Order Now</button>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 1: SHOWCASE (ZERO UPFRONT PRICES MENTIONED)                           -->
+    <!-- Hardcover Book (Spine & Overhang) + Tablet + Smartphone                   -->
+    <!-- ========================================================================= -->
+    <main id="view-showcase" class="view-container view-active flex-grow">
+      
+      <!-- HERO SECTION -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 lg:pt-10 lg:pb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Left Column: Copy & Value Hook (Prices Hidden) -->
+          <div class="lg:col-span-5 flex flex-col items-start space-y-6">
+            
+            <!-- Badges & Release Notification -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium tracking-widest text-gold-400 bg-gold-500/10 border border-gold-500/30">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+                PART ONE OF TRILOGY
+              </span>
+              <div class="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono text-zinc-300 bg-white/5 border border-white/10">
+                <span class="text-gold-400 font-bold uppercase">The Unified Operating Codex</span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="space-y-2">
+              <span class="text-xs font-serif tracking-[0.3em] font-bold text-gold-400 uppercase">RiseTheory Presents</span>
+              <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.02]">
+                What Is <br>
+                <span class="bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">Matrix</span>
+              </h1>
+              <p class="text-xl font-light text-zinc-300 font-serif italic pt-1">
+                Seeing your life as one connected whole.
+              </p>
+            </div>
+
+            <!-- Hook Body -->
+            <p class="text-sm sm:text-base text-zinc-400 leading-relaxed font-light max-w-xl">
+              Engineered for those who refuse the slow, exhausted loop. Stop trying to solve money, physical energy, and business in disconnected silos. <strong class="text-white font-medium">Part One</strong> delivers the unified codex: compress decades of cash flow into months by aligning your biological engine, startup code, and mental armor.
+            </p>
+
+            <!-- Action Buttons (No Pricing Tags) -->
+            <div class="flex flex-wrap items-center gap-3 pt-1 w-full sm:w-auto">
+              <button onclick="switchView('order')" class="w-full sm:w-auto px-7 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase text-black bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:brightness-110 transition-all shadow-[0_0_22px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2">
+                <span>Book In-App Now</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </button>
+
+              <button onclick="openLeadMagnetModal()" class="w-full sm:w-auto px-6 py-3.5 rounded-xl text-xs font-bold tracking-wider uppercase text-zinc-300 hover:text-white glass-panel hover:border-gold-500/40 transition-all flex items-center justify-center gap-2">
+                <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                <span>Read Chapter 1 Free</span>
+              </button>
+            </div>
+
+            <!-- Launch Bonus Pill (No Price Figures) -->
+            <div class="pt-2 flex items-center gap-2 text-xs text-zinc-400">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Includes Complete Launch Multiplier Vault with all orders</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: 3D Showcase (Book + Tablet + Phone) -->
+          <div class="lg:col-span-7 flex flex-col items-center justify-center relative py-4">
+            
+            <!-- THE INTERACTIVE 3D COMPOSITE TRIO -->
+            <div id="trioStageContainer" class="showcase-stage-3d w-full max-w-[580px] h-[480px] sm:h-[530px] relative flex items-center justify-center select-none cursor-pointer">
+              
+              <!-- Ambient Stardust Glow Backdrop -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-gold-500/10 via-matrixSky/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+              <!-- 1. TABLET (iPad) - BACKGROUND RIGHT LAYER -->
+              <div id="layerTablet" class="parallax-layer absolute right-4 sm:right-8 top-6 sm:top-8 w-[240px] sm:w-[280px] h-[340px] sm:h-[390px] rounded-[2rem] bg-[#0c0c0f] border-[6px] border-[#1c1c22] shadow-[0_20px_50px_rgba(0,0,0,0.9)] overflow-hidden z-10 flex flex-col justify-between p-4">
+                <div class="w-full flex justify-center mb-1">
+                  <div class="w-2.5 h-2.5 rounded-full bg-zinc-800 border border-zinc-700/50"></div>
+                </div>
+
+                <div class="relative flex-grow rounded-xl bg-black border border-white/10 p-3 sm:p-4 flex flex-col justify-between overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none"></div>
+                  
+                  <div class="relative z-10 flex justify-between items-center text-[8px] font-mono text-zinc-400 uppercase tracking-widest">
+                    <span>Part One</span>
+                    <span class="text-gold-400">E-Book</span>
+                  </div>
+
+                  <div class="relative z-10">
+                    <p class="text-xs font-mono font-bold text-zinc-400 uppercase">Part One</p>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-white leading-tight">
+                      What Is<br>Matrix
+                    </h3>
+                  </div>
+
+                  <!-- 6x5 Wireframe Grid on Tablet -->
+                  <div class="relative z-10 my-auto py-1">
+                    <div class="grid grid-cols-6 gap-1 w-32 sm:w-36 aspect-[6/5] mx-auto p-1.5 rounded-lg bg-black/70 border border-white/10">
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-matrixSky glow-sky border border-blue-200"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-matrixGreen glow-green border border-emerald-200"></div>
+                      <div class="rounded-sm bg-matrixCoral glow-coral border border-rose-200"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-matrixYellow glow-gold border border-amber-200"></div>
+                      <div class="rounded-sm bg-matrixCobalt glow-cobalt border border-indigo-200"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                    </div>
+                  </div>
+
+                  <div class="relative z-10 flex items-center justify-between text-[7px] text-zinc-400 font-serif border-t border-white/10 pt-1">
+                    <span class="italic">Seeing your life as one...</span>
+                    <span class="text-gold-400 font-bold uppercase tracking-wider">RiseTheory</span>
+                  </div>
+                </div>
+
+                <div class="w-full flex justify-center mt-1">
+                  <div class="w-4 h-4 rounded-full border border-zinc-700/60 flex items-center justify-center">
+                    <div class="w-1.5 h-1.5 rounded-sm border border-zinc-600"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. PHYSICAL HARDCOVER BOOK - MIDGROUND LEFT LAYER -->
+              <div id="layerBook" class="parallax-layer absolute left-2 sm:left-6 top-8 sm:top-10 z-20">
+                <div class="book-3d-wrapper relative w-[250px] sm:w-[285px] h-[375px] sm:h-[425px]">
+                  
+                  <div id="bookSheen" class="absolute inset-0 rounded-2xl pointer-events-none z-30 opacity-40 transition-opacity"></div>
+
+                  <!-- TOP PAGE BLOCK -->
+                  <div class="book-top-pages-facet absolute top-0 left-0 w-full h-[36px] bg-[#f2f1e8] border border-zinc-400 shadow-inner flex items-center overflow-hidden">
+                    <div class="w-full h-full bg-[repeating-linear-gradient(to_right,#e8e7dd,#e8e7dd_1px,#f7f6ed_2px,#dcdbcc_3px)] opacity-95"></div>
+                    <div class="absolute top-0 inset-x-0 h-[2px] bg-[#08080a]"></div>
+                    <div class="absolute bottom-0 inset-x-0 h-[2px] bg-[#08080a]"></div>
+                  </div>
+
+                  <!-- LEFT HARDCOVER SPINE -->
+                  <div class="book-spine-facet absolute top-0 left-0 w-[36px] h-full bg-[#070709] border-l border-y border-white/20 rounded-l-md flex flex-col justify-between items-center py-4 px-1 shadow-[0_15px_30px_rgba(0,0,0,0.9)] overflow-hidden">
+                    <span class="text-[8px] font-mono text-white/90 font-bold uppercase tracking-widest whitespace-nowrap transform -rotate-90 origin-center mt-2">
+                      PART ONE
+                    </span>
+
+                    <div class="flex-grow flex items-center justify-center my-auto">
+                      <span class="text-[13px] sm:text-[15px] font-sans font-black text-white tracking-wider whitespace-nowrap transform -rotate-90 origin-center filter drop-shadow">
+                        What Is Matrix
+                      </span>
+                    </div>
+
+                    <div class="mb-1 flex flex-col items-center">
+                      <svg viewBox="0 0 100 100" class="w-5 h-5 fill-gold-400">
+                        <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <!-- RIGHT PAGE BLOCK -->
+                  <div class="book-right-pages-facet absolute top-1 right-0 w-[34px] h-[98%] bg-[repeating-linear-gradient(to_bottom,#dcdcd5,#dcdcd5_1px,#ecece6_2px,#cbcbc2_3px)] border-r border-zinc-700/60 rounded-r-sm opacity-90"></div>
+
+                  <!-- FRONT COVER -->
+                  <div class="absolute inset-0 rounded-2xl bg-[#09090c] border border-white/15 p-5 sm:p-6 flex flex-col justify-between overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
+
+                    <div class="relative z-10">
+                      <span class="text-[10px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">PART ONE</span>
+                    </div>
+
+                    <div class="relative z-10 pt-1">
+                      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-[1.05]">
+                        What Is<br>
+                        <span>Matrix</span>
+                      </h2>
+                    </div>
+
+                    <!-- 6x5 Wireframe Grid with 5 Diagonal Tiles -->
+                    <div class="relative z-10 my-auto py-2">
+                      <div class="grid grid-cols-6 gap-1 sm:gap-1.5 w-48 sm:w-52 aspect-[6/5] mx-auto p-2 rounded-xl bg-black/60 border border-white/10 backdrop-blur-sm shadow-inner">
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <button onclick="revealPillar('blue')" class="rounded-sm bg-matrixSky glow-sky border border-blue-200 flex items-center justify-center transition-transform hover:scale-105" title="Mental Fortress">
+                          <span class="text-[8px] font-mono text-white font-bold">IV</span>
+                        </button>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <button onclick="revealPillar('green')" class="rounded-sm bg-matrixGreen glow-green border border-emerald-200 flex items-center justify-center transition-transform hover:scale-105" title="Biological Engine">
+                          <span class="text-[8px] font-mono text-white font-bold">III</span>
+                        </button>
+                        <button onclick="revealPillar('coral')" class="rounded-sm bg-matrixCoral glow-coral border border-rose-200 flex items-center justify-center transition-transform hover:scale-105" title="Modern Startup Code">
+                          <span class="text-[8px] font-mono text-white font-bold">II</span>
+                        </button>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <button onclick="revealPillar('yellow')" class="rounded-sm bg-matrixYellow glow-gold border border-amber-200 flex items-center justify-center transition-transform hover:scale-105" title="Rapid Wealth Architecture">
+                          <span class="text-[8px] font-mono text-black font-extrabold">I</span>
+                        </button>
+                        <button onclick="revealPillar('cobalt')" class="rounded-sm bg-matrixCobalt glow-cobalt border border-indigo-200 flex items-center justify-center transition-transform hover:scale-105" title="The Unified Matrix">
+                          <span class="text-[8px] font-mono text-white font-bold">Ω</span>
+                        </button>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                        <div class="rounded-sm bg-zinc-950 border border-white/5"></div>
+                      </div>
+                    </div>
+
+                    <div class="relative z-10 pt-2 flex items-end justify-between border-t border-white/10">
+                      <p class="text-[9px] sm:text-[10px] text-zinc-300 font-serif italic max-w-[130px] leading-tight">
+                        Seeing your life as one connected whole
+                      </p>
+                      
+                      <div class="flex flex-col items-center">
+                        <svg viewBox="0 0 100 100" class="w-6 h-6 fill-gold-400 filter drop-shadow">
+                          <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+                          <path d="M50 40 C43 52 38 68 35 88 C44 80 50 68 50 55 C50 68 56 80 65 88 C62 68 57 52 50 40 Z" fill="#e5be53" />
+                        </svg>
+                        <span class="font-serif text-[9px] tracking-widest text-gold-400 font-bold uppercase mt-0.5">RiseTheory</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3. SMARTPHONE (iPhone) - FOREGROUND CENTER LAYER -->
+              <div id="layerPhone" class="parallax-layer absolute left-1/2 -translate-x-1/2 sm:left-[45%] bottom-2 sm:bottom-4 w-[160px] sm:w-[185px] h-[290px] sm:h-[330px] rounded-[2rem] bg-[#0a0a0d] border-[5px] border-[#22222a] shadow-[0_25px_60px_rgba(0,0,0,0.95)] z-30 p-2.5 flex flex-col justify-between">
+                <div class="w-full flex items-center justify-center gap-2 mb-1">
+                  <div class="w-2 h-2 rounded-full bg-zinc-800"></div>
+                  <div class="w-8 h-1 rounded-full bg-zinc-800"></div>
+                </div>
+
+                <div class="relative flex-grow rounded-xl bg-black border border-white/10 p-2.5 flex flex-col justify-between overflow-hidden">
+                  <div class="relative z-10 flex justify-between items-center text-[7px] font-mono text-zinc-500 uppercase">
+                    <span>Part One</span>
+                    <span class="text-gold-400">Reader</span>
+                  </div>
+
+                  <div class="relative z-10 text-center">
+                    <p class="text-[8px] font-mono text-zinc-400 uppercase">Part One</p>
+                    <h4 class="text-sm font-extrabold text-white leading-tight">What Is<br>Matrix</h4>
+                  </div>
+
+                  <div class="relative z-10 my-auto">
+                    <div class="grid grid-cols-6 gap-0.5 w-24 aspect-[6/5] mx-auto p-1 rounded bg-black/80 border border-white/10">
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-matrixSky glow-sky rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-matrixGreen glow-green rounded-[1px]"></div>
+                      <div class="bg-matrixCoral glow-coral rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-matrixYellow glow-gold rounded-[1px]"></div>
+                      <div class="bg-matrixCobalt glow-cobalt rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                      <div class="bg-zinc-950 rounded-[1px]"></div>
+                    </div>
+                  </div>
+
+                  <div class="relative z-10 flex items-center justify-center gap-1 text-[7px] text-gold-400 font-bold uppercase">
+                    <svg viewBox="0 0 100 100" class="w-3.5 h-3.5 fill-gold-400">
+                      <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+                    </svg>
+                    <span>RiseTheory</span>
+                  </div>
+                </div>
+
+                <div class="w-full flex justify-center mt-1">
+                  <div class="w-5 h-5 rounded-full border border-zinc-700/60 flex items-center justify-center">
+                    <div class="w-2 h-2 rounded-sm border border-zinc-600"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STUDIO GROUND REFLECTION -->
+              <div class="studio-reflection absolute -bottom-28 inset-x-0 h-36 flex items-center justify-center pointer-events-none">
+                <div class="w-4/5 h-full bg-gradient-to-t from-gold-500/10 via-zinc-800/10 to-transparent rounded-full blur-md"></div>
+              </div>
+
+            </div>
+
+            <p class="text-[11px] text-zinc-500 font-mono tracking-wider mt-4 flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-ping"></span>
+              FLUID MULTI-PLANE PARALLAX • HOVER MOUSE OR DRAG TOUCH TO TILT
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- VALUE STACK & LAUNCH BONUSES SECTION (NO PRICES SHOWN) -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/10">
+        <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/30 relative overflow-hidden">
+          <div class="max-w-3xl space-y-4">
+            <span class="px-3 py-1 rounded-full text-xs font-mono font-bold tracking-widest text-black bg-gold-400 uppercase inline-block">
+              Launch Stack • Included Free With All Editions
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">The RiseTheory Multiplier Vault</h2>
+            <p class="text-sm text-zinc-300 leading-relaxed">
+              When you order your copy of Part One today, you don't just receive the book—you receive the complete execution kit engineered to fast-track your results.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="p-6 rounded-2xl bg-surface/90 border border-white/10 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-gold-400 font-bold">BONUS 01</span>
+                <span class="text-xs font-mono text-zinc-400">WORKBOOK EDITION</span>
+              </div>
+              <h3 class="text-base font-bold text-white">90-Day Matrix Execution Blueprint</h3>
+              <p class="text-xs text-zinc-400">A fillable daily execution workbook tracking your asymmetric bets, biological metrics, and dopamine protocols.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-surface/90 border border-white/10 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-matrixGreen font-bold">BONUS 02</span>
+                <span class="text-xs font-mono text-zinc-400">AUDIO CODEX</span>
+              </div>
+              <h3 class="text-base font-bold text-white">Audio Companion Transmissions</h3>
+              <p class="text-xs text-zinc-400">Audio codex briefings recorded by the RiseTheory architect for high-intensity focus and morning workouts.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-surface/90 border border-white/10 space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-mono text-matrixSky font-bold">BONUS 03</span>
+                <span class="text-xs font-mono text-zinc-400">VIP ACCESS</span>
+              </div>
+              <h3 class="text-base font-bold text-white">Private Inner Circle Access</h3>
+              <p class="text-xs text-zinc-400">Direct membership into our private operator network for early chapter drops, deal breakdowns, and Q&A.</p>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-zinc-400">
+              <strong class="text-white">Complete Launch Multiplier Vault</strong> — Bundled 100% Complimentary with all Physical & Digital Orders today.
+            </div>
+            <button onclick="switchView('order')" class="px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors">
+              Claim Your Free Launch Vault →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE 5 LIVING MATRIX PILLARS -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/10">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-mono font-bold text-gold-400 uppercase tracking-[0.3em]">The Living Architecture</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">The 4-Layer Wealth Engine</h2>
+          <p class="text-zinc-400 text-sm mt-2">
+            The colored tiles on the cover are functional coordinates. Tap any node to decode why fragmented lives stay broke and exhausted.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <!-- Interactive 6x5 Grid UI -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 shadow-2xl w-full max-w-sm">
+              <div class="grid grid-cols-6 gap-2.5 aspect-[6/5]">
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">01</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">02</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">03</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">04</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">05</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">06</div>
+
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">07</div>
+                <button onclick="revealPillar('blue')" class="group relative rounded-lg bg-matrixSky glow-sky border-2 border-blue-300 transition-transform active:scale-95 hover:scale-105 flex items-center justify-center">
+                  <span class="text-white font-mono text-[10px] font-bold">IV</span>
+                </button>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">09</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">10</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">11</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">12</div>
+
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">13</div>
+                <button onclick="revealPillar('green')" class="group relative rounded-lg bg-matrixGreen glow-green border-2 border-emerald-300 transition-transform active:scale-95 hover:scale-105 flex items-center justify-center">
+                  <span class="text-white font-mono text-[10px] font-bold">III</span>
+                </button>
+                <button onclick="revealPillar('coral')" class="group relative rounded-lg bg-matrixCoral glow-coral border-2 border-rose-300 transition-transform active:scale-95 hover:scale-105 flex items-center justify-center">
+                  <span class="text-white font-mono text-[10px] font-bold">II</span>
+                </button>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">16</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">17</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">18</div>
+
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">19</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">20</div>
+                <button onclick="revealPillar('yellow')" class="group relative rounded-lg bg-matrixYellow glow-gold border-2 border-amber-300 transition-transform active:scale-95 hover:scale-105 flex items-center justify-center">
+                  <span class="text-black font-mono text-[10px] font-extrabold">I</span>
+                  <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+                </button>
+                <button onclick="revealPillar('cobalt')" class="group relative rounded-lg bg-matrixCobalt glow-cobalt border-2 border-indigo-300 transition-transform active:scale-95 hover:scale-105 flex items-center justify-center">
+                  <span class="text-white font-mono text-[10px] font-bold">Ω</span>
+                </button>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">23</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">24</div>
+
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">25</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">26</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">27</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">28</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">29</div>
+                <div class="rounded-lg bg-zinc-950 border border-white/5 flex items-center justify-center text-zinc-700 text-[10px] font-mono">30</div>
+              </div>
+              <div class="mt-4 flex items-center justify-between text-xs text-zinc-500 font-mono">
+                <span>PRIORITY: RAPID WEALTH FIRST</span>
+                <span>TAP COLORED BLOCKS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Reveal Insight Card -->
+          <div class="lg:col-span-7">
+            <div id="pillarInsightCard" class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 relative overflow-hidden transition-all duration-300">
+              <div id="pillarAccentBar" class="absolute top-0 left-0 right-0 h-1.5 bg-matrixYellow"></div>
+
+              <div class="flex items-center gap-3">
+                <span id="pillarTag" class="px-3 py-1 rounded-full text-xs font-mono font-bold tracking-widest text-matrixYellow bg-amber-500/10 border border-amber-500/30 uppercase">
+                  Layer 01 • Rapid Wealth Architecture
+                </span>
+                <span class="text-xs text-zinc-500 font-mono">PART ONE / CHAPTER 01</span>
+              </div>
+
+              <h3 id="pillarTitle" class="text-2xl sm:text-3xl font-extrabold text-white mt-4">
+                The Velocity of Wealth & Asymmetric Leverage
+              </h3>
+
+              <blockquote id="pillarQuote" class="text-zinc-300 font-serif italic text-base sm:text-lg border-l-2 border-matrixYellow pl-4 my-5 leading-relaxed">
+                "Trading 40 hours a week for 40 years is not financial security; it is mathematical servitude. Wealth is not built by slow accumulation, but by deploying asymmetric digital leverage."
+              </blockquote>
+
+              <p id="pillarDesc" class="text-zinc-400 text-sm leading-relaxed">
+                Deconstruct the slow-money trap. Part One reveals how to spot high-margin cash flow vehicles, leverage digital distribution, and build automated income pipes in compressed timelines.
+              </p>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button onclick="switchView('about')" class="text-xs font-semibold uppercase tracking-wider text-white hover:text-gold-400 transition-colors flex items-center gap-2">
+                  <span>Explore All 4 Layers in "About"</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMATS OVERVIEW (ZERO UPFRONT PRICES) -->
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-white/10">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-mono text-gold-400 font-semibold uppercase tracking-widest">In-App Booking</span>
+          <h2 class="text-3xl font-extrabold text-white mt-2">Choose Your Edition</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Hardcover -->
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/30 glass-card-hover relative flex flex-col justify-between">
+            <span class="absolute -top-3 right-6 px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-widest text-black bg-gold-400 uppercase">
+              Collector's Foil Edition
+            </span>
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Collector's Hardcover</h3>
+              <p class="text-xs text-zinc-400 mt-2">
+                Heavy matte obsidian casing with embossed gold foil RiseTheory crest, ribbon bookmark, and archival paper stock.
+              </p>
+              <div class="mt-6 flex items-center justify-between text-xs font-mono">
+                <span class="text-gold-400 font-bold uppercase">Physical Print</span>
+                <span class="text-zinc-400">Tracked Express Courier</span>
+              </div>
+            </div>
+            <button onclick="preSelectEdition('hardcover')" class="mt-8 w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors">
+              Book Hardcover In-App
+            </button>
+          </div>
+
+          <!-- Paperback -->
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 glass-card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">Classic Paperback</h3>
+              <p class="text-xs text-zinc-400 mt-2">
+                Velvet-touch softcover with flexible spine for continuous study, margin annotations, and daily portability.
+              </p>
+              <div class="mt-6 flex items-center justify-between text-xs font-mono">
+                <span class="text-zinc-300 font-bold uppercase">Softcover Print</span>
+                <span class="text-zinc-400">Tracked Express Courier</span>
+              </div>
+            </div>
+            <button onclick="preSelectEdition('paperback')" class="mt-8 w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-white/10 hover:bg-white/20 transition-colors">
+              Book Paperback In-App
+            </button>
+          </div>
+
+          <!-- Digital App -->
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-matrixSky/30 glass-card-hover flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-matrixSky/10 border border-matrixSky/30 flex items-center justify-center text-matrixSky mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-white">In-App Digital Portal</h3>
+              <p class="text-xs text-zinc-400 mt-2">
+                Instant digital reader credentials. Read on phone, tablet, or browser with synchronized bookmarks and notes.
+              </p>
+              <div class="mt-6 flex items-center justify-between text-xs font-mono">
+                <span class="text-matrixSky font-bold uppercase">Digital Codex</span>
+                <span class="text-emerald-400">Instant Access</span>
+              </div>
+            </div>
+            <button onclick="preSelectEdition('digital')" class="mt-8 w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-matrixSky hover:bg-blue-600 transition-colors">
+              Unlock E-Book App
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 2: ABOUT THE BOOK & 4-LAYER ROADMAP                                  -->
+    <!-- Author Authority + Detailed Look Inside (Table of Contents)               -->
+    <!-- ========================================================================= -->
+    <section id="view-about" class="view-container view-hidden flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <!-- Core Manifesto Header -->
+      <div class="max-w-3xl space-y-4 mb-14">
+        <span class="text-xs font-mono font-bold text-gold-400 tracking-[0.3em] uppercase">Core Manifesto</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Seeing Your Life as One Connected Whole
+        </h1>
+        <p class="text-base sm:text-lg text-zinc-400 font-light leading-relaxed">
+          Traditional advice tells you to work hard in a 9-to-5, exercise when you are drained, and pray for peace of mind. <strong class="text-white">That is the fragmented trap.</strong> What Is Matrix reorganizes your reality into a synchronized machine.
+        </p>
+      </div>
+
+      <!-- AUTHOR AUTHORITY & ORIGIN STORY -->
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-white/10 mb-16 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-4 flex flex-col items-center text-center space-y-4">
+            <div class="w-36 h-36 rounded-2xl bg-gradient-to-br from-gold-400/20 via-zinc-900 to-black border-2 border-gold-500/40 p-2 shadow-2xl flex items-center justify-center relative">
+              <svg viewBox="0 0 100 100" class="w-20 h-20 fill-gold-400 filter drop-shadow">
+                <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+              </svg>
+              <span class="absolute -bottom-2 px-3 py-0.5 rounded-full text-[9px] font-mono font-bold text-black bg-gold-400 uppercase">
+                RiseTheory Architect
+              </span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">The RiseTheory Architect</h3>
+              <p class="text-xs text-gold-400 font-mono">Systems Thinker & Venture Operator</p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8 space-y-4">
+            <span class="text-xs font-mono font-bold text-gold-400 uppercase tracking-widest">Origin Story & Authority</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Why "What Is Matrix" Was Written</h2>
+            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed font-light">
+              "For years I watched brilliant individuals burn out trading 50 hours a week for someone else's equity. They would attempt to read fitness books, then finance books, then mental health books—all written by people who lived completely isolated realities. None of it connected."
+            </p>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-light">
+              RiseTheory was founded on an unapologetic realization: <strong class="text-zinc-200">You cannot conquer wealth with a sluggish body, and you cannot run a business with a fragmented mind.</strong> What Is Matrix Part One is not theoretical philosophy. It is the tactical operating manual engineered from real venture battles, biological testing, and asymmetrical capital management.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETAILED TABLE OF CONTENTS / LOOK INSIDE (CURRICULUM) -->
+      <div class="mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-mono text-gold-400 font-bold uppercase tracking-[0.3em]">Curriculum Index</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">Look Inside: The 12 Chapters</h2>
+          <p class="text-zinc-400 text-xs sm:text-sm mt-1">Explore the exact curriculum taught inside Part One.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Layer 1 Accordion -->
+          <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-matrixYellow border-t border-r border-b border-white/5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-matrixYellow uppercase">Layer 01 • Rapid Wealth Architecture</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-matrixYellow glow-gold"></span>
+            </div>
+            <div class="space-y-2 pt-2">
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <div class="flex justify-between items-center text-xs font-bold text-white">
+                  <span>Ch 01: The Velocity of Wealth</span>
+                  <span class="text-[10px] text-gold-400 font-mono">READABLE</span>
+                </div>
+                <p class="text-[11px] text-zinc-400 mt-1">Deconstructing the slow-income illusion; establishing asymmetric multipliers.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 02: Digital Pipes vs Linear Labor</p>
+                <p class="text-[11px] text-zinc-400 mt-1">How automated software and capital distribution replace physical time.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 03: Compressing 10 Years into 12 Months</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Hyper-leveraged vehicles and managing sudden capital inflow.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layer 2 Accordion -->
+          <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-matrixCoral border-t border-r border-b border-white/5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-matrixCoral uppercase">Layer 02 • Modern Startup Code</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-matrixCoral glow-coral"></span>
+            </div>
+            <div class="space-y-2 pt-2">
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 04: Zero-Bloat Venture Validation</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Testing real customer willingness-to-pay in 48 hours without code.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 05: Speed as a Competitive Moat</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Out-implementing slower corporate competitors through rapid iteration.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 06: Unfair Product Positioning</p>
+                <p class="text-[11px] text-zinc-400 mt-1">High-ticket pricing and framing your offer as the sole logical solution.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layer 3 Accordion -->
+          <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-matrixGreen border-t border-r border-b border-white/5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-matrixGreen uppercase">Layer 03 • The Biological Engine</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-matrixGreen glow-green"></span>
+            </div>
+            <div class="space-y-2 pt-2">
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 07: Cellular Energy Physics</p>
+                <p class="text-[11px] text-zinc-400 mt-1">The bio-energetics of executive decision-making and eliminating afternoon crashes.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 08: Circadian & Hormonal Anchors</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Calibrating light exposure, sleep architecture, and cortisol regulation.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 09: The 10-Hour Stamina Protocol</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Somatic physical conditioning allowing uninterrupted cognitive intensity.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Layer 4 Accordion -->
+          <div class="glass-panel p-6 rounded-2xl border-l-4 border-l-matrixSky border-t border-r border-b border-white/5 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono font-bold text-matrixSky uppercase">Layer 04 • The Fortress Mind</span>
+              <span class="w-2.5 h-2.5 rounded-full bg-matrixSky glow-sky"></span>
+            </div>
+            <div class="space-y-2 pt-2">
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 10: Eliminating Procrastination at Neurological Root</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Severing micro-dopamine traps and rebuilding high-threshold focus.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 11: Emotional Clarity Under Pressure</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Navigating high-stakes business friction without self-sabotage.</p>
+              </div>
+              <div class="border border-white/5 rounded-xl p-3 bg-surface/50">
+                <p class="text-xs font-bold text-white">Ch 12: The Synchronized Whole</p>
+                <p class="text-[11px] text-zinc-400 mt-1">Locking all 4 gears into a singular, unstoppable everyday operating loop.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 3: READER LOGIN & DIGITAL IN-APP READER (WITH ANTI-SCREENSHOT ARMOR) -->
+    <!-- ========================================================================= -->
+    <section id="view-reader" class="view-container view-hidden flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <!-- Auth Screen -->
+      <div id="readerAuthBox" class="max-w-md mx-auto">
+        <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 shadow-2xl relative">
+          
+          <div class="text-center mb-8">
+            <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mx-auto mb-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-extrabold text-white">RiseTheory Reader Portal</h2>
+            <p class="text-xs text-zinc-400 mt-1">Protected Digital Reading Vault</p>
+          </div>
+
+          <!-- Form -->
+          <form onsubmit="handleReaderLogin(event)" class="space-y-4">
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Registered Phone or Email</label>
+              <input type="text" id="loginIdentifier" required placeholder="Enter registered phone or email" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400 transition-colors">
+            </div>
+
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Access Key</label>
+              <input type="password" placeholder="Enter access key" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400 transition-colors">
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors shadow-lg">
+              Enter Digital Library
+            </button>
+
+            <!-- Instant Chapter 1 Test Drive -->
+            <button type="button" onclick="launchDemoReader()" class="w-full py-3 rounded-xl text-xs font-semibold tracking-wider uppercase text-zinc-300 glass-panel hover:text-white border border-white/10 transition-colors">
+              ⚡ Instant Chapter 1 Test Drive
+            </button>
+          </form>
+
+          <p class="text-[11px] text-zinc-500 text-center mt-6">
+            Need to book your edition? <button onclick="switchView('order')" class="text-gold-400 hover:underline font-medium">Place order here</button>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- Live In-App Reading Canvas WITH ANTI-SCREENSHOT & SCREEN-RECORDING ARMOR -->
+      <div id="readerAppExperience" class="hidden max-w-4xl mx-auto space-y-6 reader-security-protected relative">
+        
+        <!-- BLACKOUT CURTAIN OVERLAY (AUTO-TRIGGERS ON BLUR, SNIPPING TOOL, SCREEN CAPTURE) -->
+        <div id="readerPiracyShield" class="hidden absolute inset-0 bg-black/95 rounded-3xl z-40 flex flex-col items-center justify-center p-6 text-center backdrop-blur-md">
+          <div class="w-16 h-16 rounded-2xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 mb-4 shadow-[0_0_30px_rgba(244,63,94,0.3)]">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white tracking-wide">RiseTheory Protected Codex</h3>
+          <p class="text-xs text-zinc-400 max-w-sm mt-2 font-light">Screen recording, screenshots, and window switching are restricted to protect proprietary intellectual property.</p>
+          <button onclick="resumeReadingView()" class="mt-5 px-6 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors">
+            Click to Resume Reading
+          </button>
+        </div>
+
+        <!-- Controls -->
+        <div class="glass-panel p-4 rounded-2xl border border-white/10 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <button onclick="exitReader()" class="text-xs text-zinc-400 hover:text-white flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 border border-white/5">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+              </svg>
+              <span>Exit Reader</span>
+            </button>
+            <div class="h-4 w-px bg-white/10"></div>
+            <div>
+              <p class="text-xs font-bold text-white">What Is Matrix (Part One)</p>
+              <p class="text-[10px] text-zinc-400 font-mono">Chapter 1: The Velocity of Wealth</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <div class="flex items-center bg-surface border border-white/10 rounded-xl px-2 py-1">
+              <button onclick="changeFontSize(-1)" class="px-2 py-0.5 text-xs text-zinc-400 hover:text-white font-bold">A-</button>
+              <span class="text-[11px] font-mono text-zinc-500 px-1.5" id="fontSizeLabel">100%</span>
+              <button onclick="changeFontSize(1)" class="px-2 py-0.5 text-xs text-zinc-400 hover:text-white font-bold">A+</button>
+            </div>
+
+            <button onclick="toggleReaderTheme()" id="themeToggleBtn" class="px-3 py-1.5 rounded-xl text-xs font-medium border border-white/10 bg-surface text-zinc-300 hover:text-white">
+              🌙 Dark Obsidian
+            </button>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-zinc-900 h-1.5 rounded-full overflow-hidden">
+          <div class="bg-gradient-to-r from-matrixYellow via-gold-400 to-matrixCoral h-full w-[28%]"></div>
+        </div>
+
+        <!-- Text Frame with Security Watermark -->
+        <div id="readerContentFrame" class="glass-panel p-8 sm:p-14 rounded-3xl border border-white/10 shadow-2xl transition-colors duration-300 relative overflow-hidden">
+          
+          <div class="reader-security-watermark" id="readerLiveWatermark">
+            RISETHEORY PRIVATE ACCESS • RT-CODEX-AUTH • PROTECTED
+          </div>
+
+          <article class="max-w-2xl mx-auto space-y-6 leading-relaxed transition-all duration-200 relative z-20" id="readerText">
+            
+            <header class="border-b border-zinc-800 pb-6 mb-8 text-center space-y-2">
+              <span class="text-xs font-mono font-bold tracking-[0.3em] text-gold-400 uppercase">RiseTheory Codex • Part One</span>
+              <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Chapter 1: The Velocity of Wealth</h1>
+              <p class="text-xs text-zinc-500 font-mono">ESTIMATED READING TIME: 7 MINUTES • LAYER 01</p>
+            </header>
+
+            <p class="text-zinc-300 font-light text-base sm:text-lg">
+              Observe how the economic system trains human beings to think of money: as an hourly wage or a monthly salary. This single mental model is the invisible prison wall. When your income is tethered directly to physical time, your earning ceiling is biologically capped at 24 hours.
+            </p>
+
+            <p class="text-zinc-300 font-light text-base sm:text-lg">
+              The wealthy do not work for hours. They construct <strong class="text-white font-medium">Asymmetric Multipliers</strong>. An asymmetric vehicle is any system where your input is linear, but your output can compound infinitely without additional physical presence.
+            </p>
+
+            <div class="p-6 rounded-2xl bg-surface/80 border-l-4 border-l-gold-500 border-t border-r border-b border-white/5 my-8">
+              <p class="font-serif italic text-lg sm:text-xl text-zinc-100">
+                "The Matrix wants you exhausted because an exhausted mind has no cognitive bandwidth to construct leverage."
+              </p>
+              <span class="text-xs font-mono text-gold-400 mt-2 block tracking-widest uppercase">— Axiom 01 / RiseTheory</span>
+            </div>
+
+            <p class="text-zinc-300 font-light text-base sm:text-lg">
+              To understand the Matrix, you must see that wealth, physical stamina, startup execution, and mental clarity are not distinct subjects. They are gears in the exact same engine. If your biology is weak, your mental focus collapses; when your focus collapses, you surrender your capital.
+            </p>
+
+            <div class="pt-8 border-t border-zinc-800 flex items-center justify-between text-xs text-zinc-500 font-mono">
+              <span>END OF SAMPLE</span>
+              <button onclick="switchView('order')" class="text-gold-400 font-bold hover:underline uppercase tracking-wider">
+                Book Complete Edition In-App →
+              </button>
+            </div>
+
+          </article>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 4: PLACE ORDER (PRICE REVEALED EXCLUSIVELY AT CHECKOUT: FLAT ₹250)   -->
+    <!-- Strictly placed after login; booking happens directly inside this app     -->
+    <!-- ========================================================================= -->
+    <section id="view-order" class="view-container view-hidden flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <div class="max-w-3xl mx-auto mb-10 text-center">
+        <span class="text-xs font-mono font-bold text-gold-400 tracking-[0.3em] uppercase">In-App Checkout</span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Book Your Edition</h1>
+        <p class="text-zinc-400 text-sm mt-1">
+          Complete your order and payment directly inside this application. Instant digital access & tracked courier dispatch.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: In-App Order & Payment Form -->
+        <div class="lg:col-span-7 glass-panel p-6 sm:p-10 rounded-3xl border border-white/10 shadow-2xl">
+          <form id="inAppOrderForm" onsubmit="handleInAppPayment(event)" class="space-y-6">
+            
+            <!-- Step 1: Edition Selector -->
+            <div>
+              <label class="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wider mb-3">
+                1. Select Book Edition
+              </label>
+              <div class="grid grid-cols-3 gap-3">
+                
+                <label class="cursor-pointer relative">
+                  <input type="radio" name="orderEdition" value="Hardcover" class="peer sr-only" checked onchange="updatePriceBreakdown()">
+                  <div class="p-3.5 rounded-2xl glass-panel border border-white/10 peer-checked:border-gold-400 peer-checked:bg-gold-500/10 transition-all text-center">
+                    <span class="text-xs font-bold block text-white">Hardcover</span>
+                    <span class="text-xs text-gold-400 font-mono mt-1 block">Physical Foil</span>
+                  </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                  <input type="radio" name="orderEdition" value="Paperback" class="peer sr-only" onchange="updatePriceBreakdown()">
+                  <div class="p-3.5 rounded-2xl glass-panel border border-white/10 peer-checked:border-gold-400 peer-checked:bg-gold-500/10 transition-all text-center">
+                    <span class="text-xs font-bold block text-white">Paperback</span>
+                    <span class="text-xs text-zinc-400 font-mono mt-1 block">Softcover</span>
+                  </div>
+                </label>
+
+                <label class="cursor-pointer relative">
+                  <input type="radio" name="orderEdition" value="Digital E-Book" class="peer sr-only" onchange="updatePriceBreakdown()">
+                  <div class="p-3.5 rounded-2xl glass-panel border border-white/10 peer-checked:border-matrixSky peer-checked:bg-blue-500/10 transition-all text-center">
+                    <span class="text-xs font-bold block text-white">Digital App</span>
+                    <span class="text-xs text-matrixSky font-mono mt-1 block">Instant</span>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Step 2: Amazon-Style Delivery Address Form -->
+            <div class="space-y-4 pt-4 border-t border-white/10">
+              <div class="flex items-center justify-between">
+                <label class="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wider">
+                  2. Add Delivery Address
+                </label>
+                <span class="text-[10px] text-zinc-500 font-mono">COUNTRY: INDIA 🇮🇳</span>
+              </div>
+
+              <!-- Full Name & Mobile Number (Amazon Style) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-xs text-zinc-300 font-medium block mb-1">Full Name <span class="text-rose-400">*</span></label>
+                  <input type="text" id="orderCustName" required placeholder="First and last name" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                </div>
+                <div>
+                  <label class="text-xs text-zinc-300 font-medium block mb-1">Mobile Number <span class="text-rose-400">*</span></label>
+                  <div class="flex">
+                    <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-white/10 bg-surface/80 text-xs text-zinc-400 font-mono">+91</span>
+                    <input type="tel" id="orderCustPhone" maxlength="10" required placeholder="10-digit mobile number without leading 0" class="w-full bg-surface border border-white/10 rounded-r-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div>
+                <label class="text-xs text-zinc-300 font-medium block mb-1">Email Address <span class="text-rose-400">*</span></label>
+                <input type="email" id="orderCustEmail" required placeholder="For dispatch updates & digital invoice" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+              </div>
+
+              <!-- TWO DEDICATED ADDRESS OPTIONS SWITCHER -->
+              <div id="physicalAddressFields" class="space-y-4 pt-2">
+                
+                <div>
+                  <label class="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wider mb-2">
+                    Select Address Input Mode
+                  </label>
+                  <div class="grid grid-cols-2 gap-2 bg-surface p-1 rounded-xl border border-white/10">
+                    <button type="button" id="addrModeBtn-maps" onclick="setAddressInputMode('maps')" class="py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-gold-400 text-black shadow-md">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                      <span>1. Auto-Detect via Maps</span>
+                    </button>
+                    <button type="button" id="addrModeBtn-manual" onclick="setAddressInputMode('manual')" class="py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-zinc-400 hover:text-white">
+                      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                      <span>2. Add Address Manually</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- OPTION A: AUTO-DETECT VIA MAPS PANEL -->
+                <div id="addrPanel-maps" class="space-y-3 p-4 rounded-2xl bg-surface/70 border border-gold-500/30">
+                  <div class="flex items-start justify-between gap-3">
+                    <div>
+                      <h4 class="text-xs font-bold text-white flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        GPS Satellite Auto-Detection
+                      </h4>
+                      <p class="text-[11px] text-zinc-400 mt-0.5">1-tap geolocation finds your street, area, town, and 6-digit Pincode automatically.</p>
+                    </div>
+                  </div>
+
+                  <button type="button" id="mapDetectBtn" onclick="detectLocationViaMaps()" class="w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-lg">
+                    <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    <span id="mapDetectBtnText">📍 Pinpoint My Current Location on Maps</span>
+                  </button>
+
+                  <!-- Live Map Detection Result Card -->
+                  <div id="mapDetectedResultCard" class="hidden p-3.5 rounded-xl bg-obsidian border border-emerald-500/40 space-y-2">
+                    <div class="flex items-center justify-between">
+                      <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase">✓ Location Verified on Maps</span>
+                      <a id="mapsDirectLink" href="#" target="_blank" class="text-[10px] text-gold-400 hover:underline flex items-center gap-1">
+                        <span>View on Google Maps</span> ↗
+                      </a>
+                    </div>
+                    <p class="text-xs text-white font-medium" id="mapDetectedAddressSummary">Detecting location...</p>
+                    <div>
+                      <label class="text-[11px] text-zinc-400 block mb-1">Flat / House no. / Apartment (Confirm door number):</label>
+                      <input type="text" id="orderAddrFlatMaps" oninput="syncMapsFlat(this.value)" placeholder="e.g. Flat 302, Tower 4" class="w-full bg-surface border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-gold-400">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- OPTION B: MANUAL ADDRESS INPUT PANEL -->
+                <div id="addrPanel-manual" class="hidden space-y-4 pt-1">
+                  
+                  <!-- Pincode -->
+                  <div>
+                    <label class="text-xs text-zinc-300 font-medium block mb-1">6-Digit Pincode <span class="text-rose-400">*</span></label>
+                    <input type="text" id="orderAddrPin" maxlength="6" oninput="onPinInput(this.value)" placeholder="e.g. 507001, 500081, 560001" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white font-mono tracking-wider placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                  </div>
+
+                  <!-- Flat, House no., Building, Company, Apartment -->
+                  <div>
+                    <label class="text-xs text-zinc-300 font-medium block mb-1">Flat, House no., Building, Apartment <span class="text-rose-400">*</span></label>
+                    <input type="text" id="orderAddrFlat" placeholder="e.g. Flat 402, Building A, Skyline Residency" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                  </div>
+
+                  <!-- Area, Street, Sector, Village -->
+                  <div>
+                    <label class="text-xs text-zinc-300 font-medium block mb-1">Area, Street, Sector, Village <span class="text-rose-400">*</span></label>
+                    <input type="text" id="orderAddrStreet" placeholder="e.g. 5th Main Road, Jubilee Hills" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                  </div>
+
+                  <!-- Landmark (Optional helper) -->
+                  <div>
+                    <label class="text-xs text-zinc-300 font-medium block mb-1">Landmark <span class="text-zinc-500 text-[11px]">(Optional)</span></label>
+                    <input type="text" id="orderAddrLandmark" placeholder="e.g. Near Apollo Hospital, Opposite Metro Gate 2" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                  </div>
+
+                  <!-- Town/City and State -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                      <label class="text-xs text-zinc-300 font-medium block mb-1">Town / City <span class="text-rose-400">*</span></label>
+                      <input type="text" id="orderAddrCity" placeholder="Town/City (auto-filled via Pincode)" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                    </div>
+                    <div>
+                      <label class="text-xs text-zinc-300 font-medium block mb-1">State <span class="text-rose-400">*</span></label>
+                      <input type="text" id="orderAddrState" placeholder="State (auto-filled via Pincode)" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white placeholder-zinc-600 focus:outline-none focus:border-gold-400 transition-colors">
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Dynamic Courier SLA Pill (Applies to both Maps & Manual) -->
+                <div id="pincodeStatusPill" class="p-3 rounded-xl bg-obsidian border border-white/10 flex items-center justify-between text-xs">
+                  <div>
+                    <span class="text-zinc-200 font-medium block" id="shippingZoneName">Pincode verification required</span>
+                    <span class="text-[10px] text-zinc-500 font-mono" id="shippingEtaText">Auto-detect via Maps or type 6-digit Pincode</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="text-gold-400 font-mono font-bold text-xs" id="shippingFeeBadge">--</span>
+                    <span class="text-[9px] text-zinc-500 block">Delivery</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Step 3: In-App Payment Selection -->
+            <div class="space-y-4 pt-4 border-t border-white/10">
+              <div class="flex items-center justify-between">
+                <label class="block text-xs font-mono font-bold text-zinc-400 uppercase tracking-wider">
+                  3. Select Payment Method
+                </label>
+                <span class="text-[10px] text-emerald-400 font-mono flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> 256-Bit Encrypted
+                </span>
+              </div>
+
+              <!-- Payment Tabs (UPI, Card, Net Banking, COD) -->
+              <div class="grid grid-cols-4 gap-2 bg-surface p-1 rounded-xl border border-white/5">
+                <button type="button" onclick="selectPayTab('upi')" id="payTab-upi" class="py-2 text-[11px] font-bold rounded-lg uppercase tracking-wider text-black bg-gold-400 transition-all">
+                  UPI
+                </button>
+                <button type="button" onclick="selectPayTab('card')" id="payTab-card" class="py-2 text-[11px] font-bold rounded-lg uppercase tracking-wider text-zinc-400 hover:text-white transition-all">
+                  Cards
+                </button>
+                <button type="button" onclick="selectPayTab('net')" id="payTab-net" class="py-2 text-[11px] font-bold rounded-lg uppercase tracking-wider text-zinc-400 hover:text-white transition-all">
+                  Banking
+                </button>
+                <button type="button" onclick="selectPayTab('cod')" id="payTab-cod" class="py-2 text-[11px] font-bold rounded-lg uppercase tracking-wider text-zinc-400 hover:text-white transition-all">
+                  COD
+                </button>
+              </div>
+
+              <!-- 4A. UPI Payment Panel -->
+              <div id="panelPay-upi" class="p-4 rounded-2xl glass-panel border border-gold-500/30 space-y-4">
+                <p class="text-xs text-zinc-300 font-medium">Instant UPI Apps & Dynamic QR</p>
+                <div class="grid grid-cols-3 gap-2">
+                  <button type="button" onclick="showToast('Google Pay intent linked')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-xs font-semibold text-white hover:border-gold-400 flex items-center justify-center gap-1.5">
+                    <span>Google Pay</span>
+                  </button>
+                  <button type="button" onclick="showToast('PhonePe intent linked')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-xs font-semibold text-white hover:border-gold-400 flex items-center justify-center gap-1.5">
+                    <span>PhonePe</span>
+                  </button>
+                  <button type="button" onclick="showToast('Paytm UPI linked')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-xs font-semibold text-white hover:border-gold-400 flex items-center justify-center gap-1.5">
+                    <span>Paytm</span>
+                  </button>
+                </div>
+
+                <div class="flex items-center gap-4 pt-2">
+                  <div class="w-20 h-20 bg-white rounded-xl p-1.5 flex flex-col items-center justify-center shrink-0 shadow-lg">
+                    <svg viewBox="0 0 100 100" class="w-full h-full fill-black">
+                      <rect x="5" y="5" width="30" height="30" fill="black"/>
+                      <rect x="10" y="10" width="20" height="20" fill="white"/>
+                      <rect x="15" y="15" width="10" height="10" fill="black"/>
+                      <rect x="65" y="5" width="30" height="30" fill="black"/>
+                      <rect x="70" y="10" width="20" height="20" fill="white"/>
+                      <rect x="75" y="15" width="10" height="10" fill="black"/>
+                      <rect x="5" y="65" width="30" height="30" fill="black"/>
+                      <rect x="10" y="70" width="20" height="20" fill="white"/>
+                      <rect x="15" y="75" width="10" height="10" fill="black"/>
+                      <circle cx="50" cy="50" r="10" fill="#d4af37"/>
+                    </svg>
+                  </div>
+                  <div class="text-xs space-y-1">
+                    <p class="text-white font-semibold">Scan QR or enter UPI VPA</p>
+                    <div class="flex gap-2 pt-1">
+                      <input type="text" id="upiIdInput" placeholder="yourname@upi" class="bg-surface border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:outline-none focus:border-gold-400 w-full">
+                      <button type="button" onclick="showToast('UPI address verified!')" class="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs text-white">Verify</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4B. Card Panel -->
+              <div id="panelPay-card" class="hidden p-4 rounded-2xl glass-panel border border-white/10 space-y-3">
+                <div>
+                  <label class="text-[11px] text-zinc-400 block mb-1">Card Number</label>
+                  <input type="text" id="cardNumInput" maxlength="19" placeholder="4532 •••• •••• 8912" class="w-full bg-surface border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-mono tracking-widest focus:outline-none focus:border-gold-400">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <label class="text-[11px] text-zinc-400 block mb-1">Expiry (MM/YY)</label>
+                    <input type="text" maxlength="5" placeholder="12/28" class="w-full bg-surface border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-gold-400">
+                  </div>
+                  <div>
+                    <label class="text-[11px] text-zinc-400 block mb-1">CVV</label>
+                    <input type="password" maxlength="4" placeholder="•••" class="w-full bg-surface border border-white/10 rounded-xl px-3 py-2 text-xs text-white font-mono focus:outline-none focus:border-gold-400">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4C. Net Banking Panel -->
+              <div id="panelPay-net" class="hidden p-4 rounded-2xl glass-panel border border-white/10 space-y-3">
+                <label class="text-xs text-zinc-400 block">Select Primary Bank</label>
+                <div class="grid grid-cols-3 gap-2 text-xs font-semibold">
+                  <button type="button" onclick="showToast('HDFC Gateway selected')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-white hover:border-gold-400">HDFC Bank</button>
+                  <button type="button" onclick="showToast('ICICI Gateway selected')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-white hover:border-gold-400">ICICI Bank</button>
+                  <button type="button" onclick="showToast('SBI Gateway selected')" class="p-2.5 rounded-xl bg-surface border border-white/10 text-white hover:border-gold-400">State Bank</button>
+                </div>
+              </div>
+
+              <!-- 4D. Cash on Delivery Panel -->
+              <div id="panelPay-cod" class="hidden p-4 rounded-2xl glass-panel border border-white/10 space-y-2 text-xs">
+                <div class="flex items-center gap-2 text-white font-bold">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  Pay Upon Physical Delivery
+                </div>
+                <p class="text-zinc-400 leading-relaxed text-[11px]">
+                  Pay cash or UPI directly to the express courier executive upon physical inspection.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Pay Now Button -->
+            <button type="submit" id="paySubmitBtn" class="w-full py-4 rounded-xl text-sm font-bold uppercase tracking-wider text-black bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:brightness-110 transition-all shadow-[0_0_25px_rgba(212,175,55,0.35)] flex items-center justify-center gap-2">
+              <span id="payBtnText">Confirm & Place Order In-App</span>
+              <svg id="paySpinner" class="hidden w-4 h-4 animate-spin text-black" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+              </svg>
+            </button>
+
+          </form>
+        </div>
+
+        <!-- Right: In-App Order Summary -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/30 space-y-6">
+            
+            <!-- LUXURY BRAND ARTWORK & FULFILLMENT SEAL (NO PRICE MENTION) -->
+            <div class="p-5 rounded-2xl bg-gradient-to-br from-gold-500/10 via-surface to-obsidian border border-gold-500/30 relative overflow-hidden">
+              <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-gold-500/10 rounded-full blur-xl pointer-events-none"></div>
+              <div class="flex items-center justify-between relative z-10">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/40 flex items-center justify-center p-2 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                    <svg viewBox="0 0 100 100" class="w-full h-full fill-gold-400">
+                      <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+                      <path d="M50 40 C43 52 38 68 35 88 C44 80 50 68 50 55 C50 68 56 80 65 88 C62 68 57 52 50 40 Z" fill="#e5be53" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="text-xs font-serif tracking-[0.25em] font-bold text-gold-400 uppercase block">RiseTheory Direct</span>
+                    <span class="text-sm font-extrabold text-white">Part One • Codex Fulfillment</span>
+                  </div>
+                </div>
+                <!-- Geometric 4-node matrix badge -->
+                <div class="flex flex-col items-end gap-1 font-mono text-[10px] text-zinc-400">
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-sm bg-matrixYellow"></span>
+                    <span class="w-2 h-2 rounded-sm bg-matrixCoral"></span>
+                    <span class="w-2 h-2 rounded-sm bg-matrixGreen"></span>
+                    <span class="w-2 h-2 rounded-sm bg-matrixSky"></span>
+                  </div>
+                  <span class="text-emerald-400 font-medium">AUTHENTIC PRINT</span>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="text-lg font-bold text-white border-b border-white/10 pb-4">Order Details</h3>
+
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between text-zinc-400">
+                <span>Selected Edition</span>
+                <span id="inAppSummaryEdition" class="text-white font-medium">Collector's Hardcover</span>
+              </div>
+              <div class="flex justify-between text-zinc-400">
+                <span id="summaryFreightLabel">Courier Delivery</span>
+                <span id="inAppSummaryShipping" class="text-gold-400 font-mono font-medium">--</span>
+              </div>
+              <div class="flex justify-between text-zinc-400">
+                <span>Launch Multiplier Vault (3 Bonuses)</span>
+                <span class="text-gold-400 font-mono font-medium">INCLUDED (FREE)</span>
+              </div>
+              <div class="flex justify-between text-zinc-400">
+                <span>Taxes & Handling</span>
+                <span class="text-emerald-400 font-mono">INCLUDED</span>
+              </div>
+              <div class="flex justify-between text-sm text-white font-bold pt-3 border-t border-white/10">
+                <span>Total Amount Due</span>
+                <span id="inAppSummaryTotal" class="text-gold-400 font-mono text-xl">--</span>
+              </div>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-surface/90 border border-white/5 text-[11px] text-zinc-400 space-y-1">
+              <p class="font-medium text-white flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                100% In-App Guaranteed
+              </p>
+              <p>Your receipt and tracking credentials are generated on this screen immediately upon payment.</p>
+            </div>
+          </div>
+
+          <!-- Customer Care Help Reference -->
+          <div class="p-4 rounded-2xl glass-panel border border-white/5 flex items-center justify-between text-xs">
+            <span class="text-zinc-400">Have delivery or payment questions?</span>
+            <button onclick="switchView('support')" class="text-gold-400 hover:underline font-semibold">Contact Care →</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ========================================================================= -->
+    <!-- VIEW 5: CUSTOMER CARE (EMAIL-ONLY DESK: NO WHATSAPP SPAM)                 -->
+    <!-- Self-Serve Courier Tracker + Official Support: risetheory.co.in@gmail.com -->
+    <!-- ========================================================================= -->
+    <section id="view-support" class="view-container view-hidden flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      
+      <!-- Attention Banner -->
+      <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/30 mb-12 relative overflow-hidden">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div class="space-y-2">
+            <span class="text-xs font-mono font-bold text-gold-400 uppercase tracking-widest">RiseTheory Concierge</span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-white">Need Assistance or Have Questions?</h1>
+            <p class="text-xs sm:text-sm text-zinc-300 max-w-2xl font-light">
+              Orders are placed inside the app. For courier dispatch tracking, damaged copy replacements, or digital keys, our publishing desk is reachable via official email with zero automated bots.
+            </p>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="mailto:risetheory.co.in@gmail.com" class="px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors flex items-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>Email risetheory.co.in@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real-Time Order Tracking Simulator Box -->
+      <div id="orderTrackerBox" class="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 mb-12">
+        <h3 class="text-lg font-bold text-white mb-2">Check Real-Time Dispatch Status</h3>
+        <p class="text-xs text-zinc-400 mb-6">Enter your Order ID (e.g. #RT-MATRIX-8921) received during in-app checkout.</p>
+        
+        <div class="flex flex-col sm:flex-row gap-3 max-w-lg mb-6">
+          <input type="text" id="trackInput" placeholder="e.g. #RT-MATRIX-8921" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white uppercase font-mono tracking-wider focus:outline-none focus:border-gold-400">
+          <button onclick="simulateOrderTrack()" class="px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors shrink-0">
+            Track Status
+          </button>
+        </div>
+
+        <div id="trackResultTimeline" class="pt-4 border-t border-white/10 space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+            <div class="p-3 rounded-xl bg-surface border border-emerald-500/30">
+              <span class="text-[10px] text-emerald-400 font-mono font-bold block">STEP 1 • COMPLETED</span>
+              <span class="text-xs text-white font-medium">In-App Payment Verified</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface border border-gold-500/40">
+              <span class="text-[10px] text-gold-400 font-mono font-bold block">STEP 2 • IN PROGRESS</span>
+              <span class="text-xs text-white font-medium">Collector Quality Pack & Seal</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface border border-white/5 opacity-60">
+              <span class="text-[10px] text-zinc-400 font-mono font-bold block">STEP 3 • PENDING</span>
+              <span class="text-xs text-zinc-300 font-medium">Express Courier Handover</span>
+            </div>
+            <div class="p-3 rounded-xl bg-surface border border-white/5 opacity-60">
+              <span class="text-[10px] text-zinc-400 font-mono font-bold block">STEP 4 • PENDING</span>
+              <span class="text-xs text-zinc-300 font-medium">Delivered to Address</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion & In-App Ticket Form -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Interactive FAQs -->
+        <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
+          <h2 class="text-xl font-bold text-white mb-6">Frequently Answered Inquiries</h2>
+          <div class="space-y-4">
+            
+            <div class="rounded-2xl border border-white/5 bg-surface/50 overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full px-5 py-4 text-left flex items-center justify-between text-sm font-semibold text-white">
+                <span>How soon after in-app booking will my physical book ship?</span>
+                <span class="faq-icon text-zinc-400 font-mono text-lg">+</span>
+              </button>
+              <div class="faq-body hidden px-5 pb-4 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                All physical orders (Hardcover & Paperback) are processed within 24 business hours. Transit times vary by PIN code: 2–3 business days for Telangana/AP, 3–4 days for South, and 4–5 days nationwide via tracked priority couriers.
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/5 bg-surface/50 overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full px-5 py-4 text-left flex items-center justify-between text-sm font-semibold text-white">
+                <span>What is the 100% Free Damaged Copy Replacement Guarantee?</span>
+                <span class="faq-icon text-zinc-400 font-mono text-lg">+</span>
+              </button>
+              <div class="faq-body hidden px-5 pb-4 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                If your physical book incurs courier damage (bent corners, crushed spine, or torn cover), email our concierge desk at <strong class="text-gold-400">risetheory.co.in@gmail.com</strong>. We immediately dispatch a brand-new replacement copy free of charge with zero return hassles.
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/5 bg-surface/50 overflow-hidden">
+              <button onclick="toggleFaq(this)" class="w-full px-5 py-4 text-left flex items-center justify-between text-sm font-semibold text-white">
+                <span>How do I open the digital edition across my devices?</span>
+                <span class="faq-icon text-zinc-400 font-mono text-lg">+</span>
+              </button>
+              <div class="faq-body hidden px-5 pb-4 text-xs text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                Your digital key is displayed on screen right after checkout and sent to your email. You can log into Tab 3 (Reader Login) from any mobile, tablet, or laptop browser.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Direct Inquiry Ticket Submission to risetheory.co.in@gmail.com -->
+        <div class="lg:col-span-5 glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
+          <h3 class="text-lg font-bold text-white mb-2">Submit Concierge Ticket</h3>
+          <p class="text-xs text-zinc-400 mb-6">Inquiries route directly to risetheory.co.in@gmail.com</p>
+          
+          <form onsubmit="handleSupportSubmit(event)" class="space-y-4">
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Your Name</label>
+              <input type="text" id="careName" required placeholder="Alex Morgan" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400">
+            </div>
+
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Order ID (If applicable)</label>
+              <input type="text" id="careOrderId" placeholder="#RT-MATRIX-8921" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400">
+            </div>
+
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Query Subject</label>
+              <select id="careSubject" class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400">
+                <option value="Courier Tracking & Dispatch">Courier Tracking & Dispatch</option>
+                <option value="In-App Reader Account Assistance">In-App Reader Account Assistance</option>
+                <option value="Damaged Transit Copy Claim">Damaged Transit Copy Claim (100% Free Replacement)</option>
+                <option value="Bulk / Corporate Distribution">Bulk / Corporate Distribution</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="text-xs text-zinc-400 block mb-1">Message</label>
+              <textarea id="careMessage" required rows="3" placeholder="Tell us how we can help you..." class="w-full bg-surface border border-white/10 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors">
+              Dispatch to risetheory.co.in@gmail.com
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER WITH LEGAL & COMPLIANCE MODAL LINKS -->
+    <footer class="mt-auto border-t border-white/10 bg-black/80 backdrop-blur-md py-10 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-gold-500/20 border border-gold-500/40 flex items-center justify-center p-1">
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-gold-400">
+              <path d="M50 15 C45 28 30 35 15 35 C28 45 35 60 38 78 C42 62 48 50 50 35 C52 50 58 62 62 78 C65 60 72 45 85 35 C70 35 55 28 50 15 Z" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-serif tracking-[0.2em] text-xs font-bold text-zinc-300 uppercase block">RiseTheory Publishing</span>
+            <span class="text-[10px] text-zinc-500 font-mono">Official Support: risetheory.co.in@gmail.com • Khammam, Telangana</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-zinc-400 font-medium">
+          <button onclick="switchView('showcase')" class="hover:text-white transition-colors">Showcase</button>
+          <button onclick="switchView('about')" class="hover:text-white transition-colors">About the Book</button>
+          <button onclick="switchView('reader')" class="hover:text-white transition-colors">Reader Login</button>
+          <button onclick="switchView('order')" class="hover:text-gold-400 transition-colors">Place Order</button>
+          <button onclick="switchView('support')" class="hover:text-white transition-colors">Customer Care</button>
+        </div>
+
+        <!-- Legal Compliance Links -->
+        <div class="flex flex-wrap items-center justify-center gap-4 text-[11px] text-zinc-500 font-mono">
+          <button onclick="openLegalModal('terms')" class="hover:text-gold-400 underline">Terms of Service</button>
+          <span>•</span>
+          <button onclick="openLegalModal('privacy')" class="hover:text-gold-400 underline">Privacy Policy</button>
+          <span>•</span>
+          <button onclick="openLegalModal('refund')" class="hover:text-gold-400 underline">Refund Policy</button>
+          <span>•</span>
+          <button onclick="openLegalModal('shipping')" class="hover:text-gold-400 underline">Shipping Policy</button>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- MODALS: LEAD MAGNET, ORDER RECEIPT, LEGAL COMPLIANCE                      -->
+  <!-- ========================================================================= -->
+
+  <!-- 1. FREE CHAPTER 1 LEAD MAGNET MODAL -->
+  <div id="leadMagnetModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/40 max-w-md w-full shadow-2xl relative text-left">
+      <div class="flex justify-between items-center pb-4 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-ping"></span>
+          <h3 class="text-base font-bold text-white">Instant Chapter 1 Download</h3>
+        </div>
+        <button onclick="closeLeadMagnetModal()" class="text-zinc-400 hover:text-white text-xl">✕</button>
+      </div>
+
+      <div class="py-4 space-y-3 text-xs">
+        <p class="text-zinc-300 leading-relaxed">
+          Get the unedited first chapter: <strong class="text-white">"The Velocity of Wealth: Why Trading Time for Dollars is a Mathematical Trap"</strong> sent directly to your email.
+        </p>
+
+        <form onsubmit="handleLeadMagnetSubmit(event)" class="space-y-3 pt-2">
+          <div>
+            <label class="text-[11px] text-zinc-400 block mb-1">Your Full Name</label>
+            <input type="text" id="leadName" required placeholder="Alex Morgan" class="w-full bg-surface border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400">
+          </div>
+          <div>
+            <label class="text-[11px] text-zinc-400 block mb-1">Email Address</label>
+            <input type="email" id="leadEmail" required placeholder="alex@example.com" class="w-full bg-surface border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-gold-400">
+          </div>
+
+          <button type="submit" class="w-full py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500 hover:brightness-110 transition-all shadow-lg mt-2">
+            Unlock & Read Chapter 1 Free
+          </button>
+        </form>
+        <p class="text-[10px] text-zinc-500 text-center font-mono">Zero Spam. Instant Access.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 2. ORDER SUCCESS RECEIPT MODAL -->
+  <div id="receiptModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/40 max-w-lg w-full shadow-2xl relative text-left">
+      
+      <div class="flex items-center justify-between pb-4 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-gold-400 flex items-center justify-center text-black font-extrabold text-sm">✓</div>
+          <div>
+            <h3 class="text-base font-bold text-white">Booking Confirmed In-App</h3>
+            <p class="text-[10px] text-zinc-400 font-mono">RiseTheory Official Order Receipt</p>
+          </div>
+        </div>
+        <button onclick="closeReceiptModal()" class="text-zinc-400 hover:text-white text-xl">✕</button>
+      </div>
+
+      <div class="py-6 space-y-4 text-xs">
+        <div class="flex justify-between items-center bg-surface/90 p-3.5 rounded-xl border border-gold-500/20">
+          <div>
+            <span class="text-[10px] text-zinc-500 font-mono block">OFFICIAL ORDER ID</span>
+            <span class="text-gold-400 font-mono font-bold text-sm" id="receiptOrderId">#RT-MATRIX-8921</span>
+          </div>
+          <span class="px-2.5 py-1 rounded-md text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30">PAID & SECURED</span>
+        </div>
+
+        <div class="space-y-2.5 pt-1">
+          <div class="flex justify-between text-zinc-400">
+            <span>Customer Name:</span>
+            <span class="text-white font-medium" id="receiptCustName">Alex Morgan</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Edition Booked:</span>
+            <span class="text-white font-medium" id="receiptEdition">Collector's Hardcover</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Book Retail Price:</span>
+            <span class="text-white font-mono">₹250</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Courier Freight:</span>
+            <span class="text-gold-400 font-mono" id="receiptFreightFee">+₹40</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Total Paid:</span>
+            <span class="text-gold-400 font-mono font-bold text-sm" id="receiptPrice">₹290</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Digital E-Book Access Code:</span>
+            <span class="text-matrixSky font-mono font-bold" id="receiptAccessCode">RT-READER-GOLD</span>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-surface border border-white/5 text-[11px] text-zinc-400 space-y-1">
+          <p class="text-white font-semibold">What happens next?</p>
+          <p>Your package is being hand-inspected at our central fulfillment hub in Telangana. An order confirmation has been emailed to you.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 pt-2">
+        <button onclick="downloadReceiptSim()" class="flex-1 py-3 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors text-center">
+          Download PDF Receipt
+        </button>
+        <button onclick="closeReceiptModal(); switchView('reader'); launchDemoReader();" class="px-5 py-3 rounded-xl text-xs font-semibold text-white glass-panel hover:border-gold-400/40">
+          Open Digital E-Book Now
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 3. LEGAL & COMPLIANCE MODAL -->
+  <div id="legalModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md hidden opacity-0 transition-opacity duration-300">
+    <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-white/20 max-w-2xl w-full shadow-2xl relative text-left flex flex-col max-h-[85vh]">
+      <div class="flex justify-between items-center pb-4 border-b border-white/10 shrink-0">
+        <div>
+          <h3 class="text-base font-bold text-white" id="legalModalTitle">Terms of Service</h3>
+          <p class="text-[10px] text-zinc-400 font-mono">RiseTheory Publishing Legal & Regulatory Compliance</p>
+        </div>
+        <button onclick="closeLegalModal()" class="text-zinc-400 hover:text-white text-xl">✕</button>
+      </div>
+
+      <div id="legalModalBody" class="py-4 space-y-4 text-xs text-zinc-300 overflow-y-auto leading-relaxed pr-2 font-light"></div>
+
+      <div class="pt-4 border-t border-white/10 flex justify-end shrink-0">
+        <button onclick="closeLegalModal()" class="px-6 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-black bg-gold-400 hover:bg-gold-300 transition-colors">
+          I Understand & Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 glass-panel border border-gold-500/40 px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-ping"></div>
+    <span id="toastMessage" class="text-xs font-medium text-white">Action successful</span>
+  </div>
+
+
+  <!-- ========================================================================= -->
+  <!-- JAVASCRIPT LOGIC                                                          -->
+  <!-- ========================================================================= -->
+  <script>
+    // -------------------------------------------------------------------------
+    // 1. AMBIENT CURSOR / POINTER SPOTLIGHT
+    // -------------------------------------------------------------------------
+    const spotlight = document.getElementById('spotlight');
+    function updateSpotlight(x, y) {
+      if (!spotlight) return;
+      spotlight.style.background = `radial-gradient(550px circle at ${x}px ${y}px, rgba(212, 175, 55, 0.08), rgba(76, 130, 251, 0.05), transparent 70%)`;
+    }
+    window.addEventListener('pointermove', (e) => updateSpotlight(e.clientX, e.clientY));
+    window.addEventListener('touchmove', (e) => {
+      if (e.touches.length > 0) updateSpotlight(e.touches[0].clientX, e.touches[0].clientY);
+    });
+
+    // -------------------------------------------------------------------------
+    // 2. FLUID MULTI-PLANE PARALLAX 3D PHYSICS
+    // -------------------------------------------------------------------------
+    const stage = document.getElementById('trioStageContainer');
+    const layerBook = document.getElementById('layerBook');
+    const layerTablet = document.getElementById('layerTablet');
+    const layerPhone = document.getElementById('layerPhone');
+    const bookSheen = document.getElementById('bookSheen');
+
+    let targetRotX = 0, targetRotY = 0;
+    let currentRotX = 0, currentRotY = 0;
+
+    function initTrioParallaxPhysics() {
+      if (!stage) return;
+
+      function onPointerMove(clientX, clientY) {
+        const rect = stage.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const deltaX = (clientX - centerX) / (rect.width / 2);
+        const deltaY = (clientY - centerY) / (rect.height / 2);
+
+        const normX = Math.max(-1.2, Math.min(1.2, deltaX));
+        const normY = Math.max(-1.2, Math.min(1.2, deltaY));
+
+        targetRotY = normX * 14;
+        targetRotX = -normY * 10;
+
+        if (bookSheen) {
+          const gx = ((normX + 1) / 2) * 100;
+          const gy = ((normY + 1) / 2) * 100;
+          bookSheen.style.background = `radial-gradient(circle at ${gx}% ${gy}%, rgba(255,255,255,0.35) 0%, rgba(212,175,55,0.12) 45%, transparent 75%)`;
+        }
+      }
+
+      window.addEventListener('mousemove', (e) => onPointerMove(e.clientX, e.clientY));
+
+      stage.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) {
+          onPointerMove(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: true });
+
+      stage.addEventListener('mouseleave', () => { targetRotX = 0; targetRotY = 0; });
+      stage.addEventListener('touchend', () => { targetRotX = 0; targetRotY = 0; });
+
+      function animateTrioParallax() {
+        currentRotX += (targetRotX - currentRotX) * 0.08;
+        currentRotY += (targetRotY - currentRotY) * 0.08;
+
+        if (layerTablet) {
+          const tabX = currentRotY * 0.6;
+          const tabY = currentRotX * 0.6;
+          layerTablet.style.transform = `translate3d(${tabX.toFixed(2)}px, ${tabY.toFixed(2)}px, -40px) rotateY(${(-18 + currentRotY * 0.4).toFixed(2)}deg) rotateX(${(4 + currentRotX * 0.4).toFixed(2)}deg)`;
+        }
+
+        if (layerBook) {
+          const bookX = currentRotY * 1.1;
+          const bookY = currentRotX * 1.1;
+          layerBook.style.transform = `translate3d(${bookX.toFixed(2)}px, ${bookY.toFixed(2)}px, 10px) rotateY(${(currentRotY * 0.8).toFixed(2)}deg) rotateX(${(currentRotX * 0.8).toFixed(2)}deg)`;
+        }
+
+        if (layerPhone) {
+          const phoneX = currentRotY * 1.8;
+          const phoneY = currentRotX * 1.8;
+          layerPhone.style.transform = `translate3d(${phoneX.toFixed(2)}px, ${phoneY.toFixed(2)}px, 60px) rotateY(${(-8 + currentRotY * 1.2).toFixed(2)}deg) rotateX(${(2 + currentRotX * 1.2).toFixed(2)}deg)`;
+        }
+
+        requestAnimationFrame(animateTrioParallax);
+      }
+      animateTrioParallax();
+    }
+
+    // -------------------------------------------------------------------------
+    // 3. MULTI-PAGE NAVIGATION ROUTER & LIQUID INDICATOR
+    // -------------------------------------------------------------------------
+    function switchView(viewName) {
+      const views = ['showcase', 'about', 'reader', 'order', 'support'];
+      
+      views.forEach((v) => {
+        const el = document.getElementById(`view-${v}`);
+        const navBtn = document.getElementById(`nav-${v}`);
+        
+        if (v === viewName) {
+          el.classList.remove('view-hidden');
+          el.classList.add('view-active');
+          if (navBtn) {
+            navBtn.classList.add('text-white');
+            navBtn.classList.remove('text-zinc-400');
+            updateLiquidIndicator(navBtn);
+          }
+        } else {
+          el.classList.add('view-hidden');
+          el.classList.remove('view-active');
+          if (navBtn) {
+            navBtn.classList.remove('text-white');
+            navBtn.classList.add('text-zinc-400');
+          }
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function updateLiquidIndicator(activeBtn) {
+      const indicator = document.getElementById('liquidIndicator');
+      const container = document.getElementById('navTabsContainer');
+      if (!indicator || !activeBtn || !container) return;
+
+      const containerRect = container.getBoundingClientRect();
+      const btnRect = activeBtn.getBoundingClientRect();
+
+      indicator.style.opacity = '1';
+      indicator.style.left = `${btnRect.left - containerRect.left}px`;
+      indicator.style.width = `${btnRect.width}px`;
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    // -------------------------------------------------------------------------
+    // 4. LIVING MATRIX CODEX REVEAL ENGINE
+    // -------------------------------------------------------------------------
+    const pillarData = {
+      yellow: {
+        tag: 'Layer 01 • Rapid Wealth Architecture',
+        color: '#FBB040',
+        title: 'The Velocity of Wealth & Asymmetric Leverage',
+        quote: '"Trading 40 hours a week for 40 years is not financial security; it is mathematical servitude. Wealth is not built by slow accumulation, but by deploying asymmetric digital leverage."',
+        desc: 'Deconstruct the slow-money trap. Part One reveals how to spot high-margin cash flow vehicles, leverage digital distribution, and build automated income pipes in compressed timelines.'
+      },
+      coral: {
+        tag: 'Layer 02 • Modern Startup Code',
+        color: '#F26756',
+        title: 'Zero-Bloat Execution & Market Capture',
+        quote: '"Traditional business advice preaches bloated plans and slow validation. The real market rewards ruthless implementation speed and asymmetric positioning."',
+        desc: 'Master the agile startup framework. Learn how to launch without heavy capital, validate market demand in 48 hours, and close deals before competitors finish their presentations.'
+      },
+      green: {
+        tag: 'Layer 03 • The Biological Engine',
+        color: '#2FB574',
+        title: 'Somatic Power & Biological Supremacy',
+        quote: '"You cannot operate an empire on a depleted biological battery. Energy is cellular physics. When your biology collapses, your higher reasoning shuts down."',
+        desc: 'Physical stamina is your unfair financial advantage. Discover circadian resets, non-negotiable metabolic routines, and protocols for sustaining 10 hours of high-focus output without burnout.'
+      },
+      blue: {
+        tag: 'Layer 04 • The Fortress Mind',
+        color: '#4C82FB',
+        title: 'Cognitive Immunity & Extreme Focus',
+        quote: '"The mind is an operating system. If you do not install strict protocols, culture will program you with anxiety, consumer debt, and constant distraction."',
+        desc: 'Learn how to eradicate self-sabotage, kill procrastination at the neurological root, and maintain unshakable psychological resilience when navigating high-stakes situations.'
+      },
+      cobalt: {
+        tag: 'Synthesis Layer • The Unified Matrix',
+        color: '#3A68D9',
+        title: 'Seeing Your Life as One Connected Whole',
+        quote: '"Money without energy leads to hospital bills. Energy without direction leads to wasted motion. Direction without cash flow is daydreaming. When all four synchronize, you break the matrix."',
+        desc: 'The overarching codex of RiseTheory: connecting physical endurance, psychological toughness, and entrepreneurial velocity into a single, unstoppable operating system.'
+      }
+    };
+
+    function revealPillar(layerKey) {
+      const data = pillarData[layerKey];
+      if (!data) return;
+
+      const card = document.getElementById('pillarInsightCard');
+      const accent = document.getElementById('pillarAccentBar');
+      const tag = document.getElementById('pillarTag');
+      const title = document.getElementById('pillarTitle');
+      const quote = document.getElementById('pillarQuote');
+      const desc = document.getElementById('pillarDesc');
+
+      card.style.opacity = '0.35';
+      card.style.transform = 'translateY(6px)';
+
+      setTimeout(() => {
+        accent.style.backgroundColor = data.color;
+        tag.textContent = data.tag;
+        tag.style.color = data.color;
+        tag.style.borderColor = data.color + '55';
+        tag.style.backgroundColor = data.color + '15';
+        
+        title.textContent = data.title;
+        quote.textContent = data.quote;
+        quote.style.borderColor = data.color;
+        desc.textContent = data.desc;
+
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 150);
+
+      showToast(`Decoded ${data.tag.split('•')[1]}`);
+    }
+
+    // -------------------------------------------------------------------------
+    // 5. IN-APP BOOKING & DYNAMIC PIN CODE FREIGHT (FLAT ₹250 PRICE)
+    // -------------------------------------------------------------------------
+    const BASE_BOOK_PRICE = 250;
+    let currentShippingFee = 0;
+    let currentZoneName = '';
+    let currentEta = '';
+
+    function preSelectEdition(editionType) {
+      switchView('order');
+      const radios = document.querySelectorAll('input[name="orderEdition"]');
+      radios.forEach(r => {
+        if (r.value.toLowerCase().includes(editionType)) {
+          r.checked = true;
+        }
+      });
+      updatePriceBreakdown();
+    }
+
+    function onPinInput(pinVal) {
+      const selectedRadio = document.querySelector('input[name="orderEdition"]:checked');
+      const isDigital = selectedRadio && selectedRadio.value === 'Digital E-Book';
+      if (isDigital) return;
+
+      const clean = (pinVal || '').toString().replace(/[^0-9]/g, '');
+      const cityInput = document.getElementById('orderAddrCity');
+      const stateInput = document.getElementById('orderAddrState');
+
+      if (clean.length < 6) {
+        currentShippingFee = 0;
+        currentZoneName = '';
+        currentEta = '';
+        document.getElementById('shippingZoneName').textContent = 'Enter 6-digit Pincode to verify delivery';
+        document.getElementById('shippingEtaText').textContent = 'City and State will auto-fill';
+        document.getElementById('shippingFeeBadge').textContent = '--';
+        document.getElementById('inAppSummaryShipping').textContent = '--';
+        document.getElementById('inAppSummaryTotal').textContent = '--';
+        return;
+      }
+      const pfx = parseInt(clean.substring(0, 2), 10);
+
+      // Auto-detect and populate City & State via Indian Postal Circle prefix (Amazon Style)
+      if (pfx >= 50 && pfx <= 53) {
+        currentShippingFee = 40;
+        currentZoneName = 'Telangana & AP (Express)';
+        currentEta = '2–3 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = 'Telangana / Andhra Pradesh';
+        if (cityInput && !cityInput.value) cityInput.value = pfx === 50 ? 'Hyderabad / Khammam' : 'Vijayawada / Visakhapatnam';
+      } else if (pfx >= 56 && pfx <= 64) {
+        currentShippingFee = 50;
+        currentZoneName = 'South India (KA, TN, KL)';
+        currentEta = '3–4 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = pfx <= 59 ? 'Karnataka' : (pfx <= 64 ? 'Tamil Nadu / Kerala' : 'South India');
+        if (cityInput && !cityInput.value) cityInput.value = pfx <= 59 ? 'Bengaluru' : 'Chennai';
+      } else if (pfx >= 40 && pfx <= 44) {
+        currentShippingFee = 55;
+        currentZoneName = 'Western Region (MH / Goa)';
+        currentEta = '3–5 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = 'Maharashtra';
+        if (cityInput && !cityInput.value) cityInput.value = pfx === 40 ? 'Mumbai' : 'Pune';
+      } else if (pfx >= 11 && pfx <= 20) {
+        currentShippingFee = 65;
+        currentZoneName = 'North India / Delhi NCR';
+        currentEta = '4–5 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = pfx === 11 ? 'Delhi' : 'Uttar Pradesh / Haryana';
+        if (cityInput && !cityInput.value) cityInput.value = pfx === 11 ? 'New Delhi' : 'NCR';
+      } else if (pfx >= 78 && pfx <= 79) {
+        currentShippingFee = 95;
+        currentZoneName = 'North East Priority Air';
+        currentEta = '5–7 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = 'Assam / North East';
+        if (cityInput && !cityInput.value) cityInput.value = 'Guwahati';
+      } else {
+        currentShippingFee = 60;
+        currentZoneName = 'National Express Delivery';
+        currentEta = '4–6 Business Days';
+        if (stateInput && !stateInput.value) stateInput.value = 'India';
+      }
+
+      document.getElementById('shippingZoneName').textContent = currentZoneName;
+      document.getElementById('shippingEtaText').textContent = `Estimated Delivery: ${currentEta}`;
+      document.getElementById('shippingFeeBadge').textContent = `+₹${currentShippingFee}`;
+
+      updatePriceBreakdown();
+    }
+
+    function updatePriceBreakdown() {
+      const selected = document.querySelector('input[name="orderEdition"]:checked');
+      if (!selected) return;
+
+      const edition = selected.value;
+      const isDigital = edition === 'Digital E-Book';
+      const addressFields = document.getElementById('physicalAddressFields');
+      const pinInput = document.getElementById('orderAddrPin');
+      const pinVal = (pinInput ? pinInput.value : '').replace(/[^0-9]/g, '');
+
+      const editionLabel = document.getElementById('inAppSummaryEdition');
+      if (editionLabel) editionLabel.textContent = `${edition} Edition`;
+
+      if (isDigital) {
+        if (addressFields) addressFields.style.opacity = '0.35';
+        document.getElementById('summaryFreightLabel').textContent = 'Digital Access (Instant Unlock)';
+        document.getElementById('inAppSummaryShipping').textContent = 'Free Instant Unlock';
+        document.getElementById('inAppSummaryTotal').textContent = `₹${BASE_BOOK_PRICE}`;
+      } else {
+        if (addressFields) addressFields.style.opacity = '1';
+        if (pinVal.length >= 6 && currentShippingFee > 0) {
+          document.getElementById('summaryFreightLabel').textContent = `Courier Delivery (${currentZoneName})`;
+          document.getElementById('inAppSummaryShipping').textContent = `+₹${currentShippingFee}`;
+          document.getElementById('inAppSummaryTotal').textContent = `₹${BASE_BOOK_PRICE + currentShippingFee}`;
+        } else {
+          document.getElementById('summaryFreightLabel').textContent = 'Courier Delivery';
+          document.getElementById('inAppSummaryShipping').textContent = '--';
+          document.getElementById('inAppSummaryTotal').textContent = '--';
+        }
+      }
+    }
+
+    let currentPayTab = 'upi';
+    function selectPayTab(tabKey) {
+      currentPayTab = tabKey;
+      ['upi', 'card', 'net', 'cod'].forEach(t => {
+        const btn = document.getElementById(`payTab-${t}`);
+        const panel = document.getElementById(`panelPay-${t}`);
+        if (t === tabKey) {
+          btn.classList.add('bg-gold-400', 'text-black');
+          btn.classList.remove('text-zinc-400');
+          panel.classList.remove('hidden');
+        } else {
+          btn.classList.remove('bg-gold-400', 'text-black');
+          btn.classList.add('text-zinc-400');
+          panel.classList.add('hidden');
+        }
+      });
+    }
+
+    // -------------------------------------------------------------------------
+    // ADDRESS INPUT MODE SWITCHER: MAPS AUTO-DETECT VS MANUAL ENTRY
+    // -------------------------------------------------------------------------
+    let currentAddressMode = 'maps';
+
+    function setAddressInputMode(mode) {
+      currentAddressMode = mode;
+      const mapsBtn = document.getElementById('addrModeBtn-maps');
+      const manualBtn = document.getElementById('addrModeBtn-manual');
+      const mapsPanel = document.getElementById('addrPanel-maps');
+      const manualPanel = document.getElementById('addrPanel-manual');
+
+      if (mode === 'maps') {
+        mapsBtn.className = 'py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-gold-400 text-black shadow-md';
+        manualBtn.className = 'py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-zinc-400 hover:text-white';
+        mapsPanel.classList.remove('hidden');
+        manualPanel.classList.add('hidden');
+      } else {
+        manualBtn.className = 'py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-gold-400 text-black shadow-md';
+        mapsBtn.className = 'py-2.5 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-zinc-400 hover:text-white';
+        manualPanel.classList.remove('hidden');
+        mapsPanel.classList.add('hidden');
+      }
+    }
+
+    function syncMapsFlat(val) {
+      const flatInput = document.getElementById('orderAddrFlat');
+      if (flatInput) flatInput.value = val;
+    }
+
+    // -------------------------------------------------------------------------
+    // MAPS / GEOLOCATION AUTO-DETECTION HELPER
+    // -------------------------------------------------------------------------
+    function detectLocationViaMaps() {
+      const btn = document.getElementById('mapDetectBtn');
+      const btnText = document.getElementById('mapDetectBtnText');
+
+      if (!navigator.geolocation) {
+        showToast('Geolocation is not supported by your browser. Please use Option 2: Add Address Manually.');
+        setAddressInputMode('manual');
+        return;
+      }
+
+      btn.disabled = true;
+      if (btnText) btnText.textContent = 'Acquiring GPS Satellite Lock...';
+
+      navigator.geolocation.getCurrentPosition(
+        async (pos) => {
+          const lat = pos.coords.latitude;
+          const lon = pos.coords.longitude;
+
+          try {
+            const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&addressdetails=1`);
+            const data = await res.json();
+            
+            if (data && data.address) {
+              const addr = data.address;
+              const pin = (addr.postcode || '').replace(/[^0-9]/g, '').slice(0, 6);
+              const state = addr.state || addr.region || '';
+              const city = addr.city || addr.town || addr.village || addr.county || addr.state_district || '';
+              const flatBuilding = [addr.house_number, addr.building, addr.apartment].filter(Boolean).join(', ');
+              const areaStreet = [addr.road, addr.suburb, addr.neighbourhood].filter(Boolean).join(', ');
+
+              const flatField = document.getElementById('orderAddrFlat');
+              const streetField = document.getElementById('orderAddrStreet');
+              const cityField = document.getElementById('orderAddrCity');
+              const stateField = document.getElementById('orderAddrState');
+              const pinField = document.getElementById('orderAddrPin');
+              const mapsFlatField = document.getElementById('orderAddrFlatMaps');
+
+              if (flatBuilding && flatField) flatField.value = flatBuilding;
+              if (flatBuilding && mapsFlatField) mapsFlatField.value = flatBuilding;
+              if (areaStreet && streetField) streetField.value = areaStreet;
+              if (city && cityField) cityField.value = city;
+              if (state && stateField) stateField.value = state;
+              if (pin && pin.length === 6 && pinField) {
+                pinField.value = pin;
+                onPinInput(pin);
+              }
+
+              // Update Map Card Display
+              const card = document.getElementById('mapDetectedResultCard');
+              const summary = document.getElementById('mapDetectedAddressSummary');
+              const directLink = document.getElementById('mapsDirectLink');
+
+              if (summary) {
+                summary.textContent = [flatBuilding, areaStreet, city, state, pin ? `PIN: ${pin}` : ''].filter(Boolean).join(', ');
+              }
+              if (directLink) {
+                directLink.href = `https://www.google.com/maps?q=${lat},${lon}`;
+              }
+              if (card) {
+                card.classList.remove('hidden');
+              }
+
+              showToast('Location confirmed on Maps! Courier rate calculated.');
+            }
+          } catch (err) {
+            showToast('Unable to auto-resolve address details. Switching to Manual input...');
+            setAddressInputMode('manual');
+          } finally {
+            btn.disabled = false;
+            if (btnText) btnText.textContent = '📍 Re-Detect Current Location on Maps';
+          }
+        },
+        (err) => {
+          btn.disabled = false;
+          if (btnText) btnText.textContent = '📍 Pinpoint My Current Location on Maps';
+          showToast('GPS permission denied. Please select "Add Address Manually".');
+          setAddressInputMode('manual');
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+      );
+    }
+
+    function handleInAppPayment(e) {
+      e.preventDefault();
+
+      const edition = document.querySelector('input[name="orderEdition"]:checked').value;
+      const isDigital = edition === 'Digital E-Book';
+      
+      const custNameInput = document.getElementById('orderCustName');
+      const custPhoneInput = document.getElementById('orderCustPhone');
+      const custEmailInput = document.getElementById('orderCustEmail');
+      const pinInput = document.getElementById('orderAddrPin');
+      const flatInput = document.getElementById('orderAddrFlat');
+      const streetInput = document.getElementById('orderAddrStreet');
+      const cityInput = document.getElementById('orderAddrCity');
+      const stateInput = document.getElementById('orderAddrState');
+
+      const nameVal = (custNameInput?.value || '').trim();
+      const phoneVal = (custPhoneInput?.value || '').trim().replace(/[^0-9]/g, '');
+      const emailVal = (custEmailInput?.value || '').trim();
+      const pinVal = (pinInput?.value || '').trim().replace(/[^0-9]/g, '');
+      const flatVal = (flatInput?.value || '').trim();
+      const streetVal = (streetInput?.value || '').trim();
+      const cityVal = (cityInput?.value || '').trim();
+      const stateVal = (stateInput?.value || '').trim();
+
+      // Reset previous error highlights
+      [custNameInput, custPhoneInput, custEmailInput, pinInput, flatInput, streetInput, cityInput, stateInput].forEach(inp => {
+        if (inp) inp.classList.remove('border-rose-500', 'bg-rose-500/10');
+      });
+
+      // Basic customer details check
+      if (!nameVal) {
+        if (custNameInput) { custNameInput.classList.add('border-rose-500', 'bg-rose-500/10'); custNameInput.focus(); }
+        showToast('Please enter your full name.');
+        return;
+      }
+
+      if (!phoneVal || phoneVal.length !== 10) {
+        if (custPhoneInput) { custPhoneInput.classList.add('border-rose-500', 'bg-rose-500/10'); custPhoneInput.focus(); }
+        showToast('Please enter a valid 10-digit mobile number.');
+        return;
+      }
+
+      if (!emailVal || !emailVal.includes('@')) {
+        if (custEmailInput) { custEmailInput.classList.add('border-rose-500', 'bg-rose-500/10'); custEmailInput.focus(); }
+        showToast('Please enter a valid email address.');
+        return;
+      }
+
+      // Physical delivery validation (Works whether filled via Maps or Manually)
+      if (!isDigital) {
+        if (!pinVal || pinVal.length !== 6) {
+          setAddressInputMode('manual');
+          if (pinInput) { pinInput.classList.add('border-rose-500', 'bg-rose-500/10'); pinInput.focus(); }
+          showToast('Please provide a valid 6-digit Pincode (via Maps or Manually).');
+          return;
+        }
+
+        if (!streetVal && !flatVal) {
+          setAddressInputMode('manual');
+          if (streetInput) { streetInput.classList.add('border-rose-500', 'bg-rose-500/10'); streetInput.focus(); }
+          showToast('Please enter your street address or building details.');
+          return;
+        }
+
+        if (!cityVal) {
+          setAddressInputMode('manual');
+          if (cityInput) { cityInput.classList.add('border-rose-500', 'bg-rose-500/10'); cityInput.focus(); }
+          showToast('Please provide your Town / City.');
+          return;
+        }
+
+        if (!stateVal) {
+          setAddressInputMode('manual');
+          if (stateInput) { stateInput.classList.add('border-rose-500', 'bg-rose-500/10'); stateInput.focus(); }
+          showToast('Please provide your State.');
+          return;
+        }
+
+        if (currentShippingFee <= 0) {
+          onPinInput(pinVal);
+        }
+      }
+
+      const freight = isDigital ? 0 : currentShippingFee;
+      const total = BASE_BOOK_PRICE + freight;
+      const name = nameVal || 'Valued Reader';
+
+      const btn = document.getElementById('paySubmitBtn');
+      const btnText = document.getElementById('payBtnText');
+      const spinner = document.getElementById('paySpinner');
+
+      btn.disabled = true;
+      btnText.textContent = 'Processing Secure Payment...';
+      spinner.classList.remove('hidden');
+
+      setTimeout(() => {
+        btn.disabled = false;
+        spinner.classList.add('hidden');
+        btnText.textContent = 'Confirm & Place Order In-App';
+
+        const randomOrderId = '#RT-MATRIX-' + Math.floor(1000 + Math.random() * 9000);
+        document.getElementById('receiptOrderId').textContent = randomOrderId;
+        document.getElementById('receiptCustName').textContent = name;
+        document.getElementById('receiptEdition').textContent = `${edition} Edition`;
+        document.getElementById('receiptFreightFee').textContent = isDigital ? '₹0 (Digital)' : `+₹${freight}`;
+        document.getElementById('receiptPrice').textContent = `₹${total}`;
+        
+        openReceiptModal();
+      }, 1100);
+    }
+
+    function openReceiptModal() {
+      const modal = document.getElementById('receiptModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+    }
+
+    function closeReceiptModal() {
+      const modal = document.getElementById('receiptModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    function downloadReceiptSim() {
+      showToast('Official RiseTheory Invoice PDF downloaded!');
+    }
+
+    // -------------------------------------------------------------------------
+    // 6. CUSTOMER CARE & COURIER TRACKING SIMULATOR (EMAIL-FIRST: NO WHATSAPP)
+    // -------------------------------------------------------------------------
+    function simulateOrderTrack() {
+      const id = document.getElementById('trackInput').value.trim();
+      if (!id) {
+        showToast('Please enter an Order ID');
+        return;
+      }
+      showToast(`Fetched dispatch status for ${id}: Active Transit (BlueDart Express)`);
+    }
+
+    function toggleFaq(btn) {
+      const body = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isOpen = !body.classList.contains('hidden');
+
+      document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+
+      if (!isOpen) {
+        body.classList.remove('hidden');
+        icon.textContent = '−';
+      }
+    }
+
+    function handleSupportSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('careName').value;
+      const orderId = document.getElementById('careOrderId').value || 'N/A';
+      const subject = document.getElementById('careSubject').value;
+      const message = document.getElementById('careMessage').value;
+
+      const mailSubject = encodeURIComponent(`RiseTheory Care: ${subject} (${orderId})`);
+      const mailBody = encodeURIComponent(`Customer: ${name}\nOrder ID: ${orderId}\n\nMessage:\n${message}`);
+
+      showToast(`Launching email client to risetheory.co.in@gmail.com...`);
+      window.location.href = `mailto:risetheory.co.in@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+      e.target.reset();
+    }
+
+    // -------------------------------------------------------------------------
+    // 7. DIGITAL READER PORTAL & ANTI-SCREENSHOT/RECORDING ARMOR
+    // -------------------------------------------------------------------------
+    function handleReaderLogin(e) {
+      e.preventDefault();
+      launchDemoReader();
+    }
+
+    function launchDemoReader() {
+      document.getElementById('readerAuthBox').classList.add('hidden');
+      document.getElementById('readerAppExperience').classList.remove('hidden');
+      showToast('Protected Reader Unlocked. Screenshot defense active.');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function exitReader() {
+      document.getElementById('readerAppExperience').classList.add('hidden');
+      document.getElementById('readerAuthBox').classList.remove('hidden');
+    }
+
+    // ANTI-SCREENSHOT TRIGGER & RESUME CONTROLS
+    function triggerReaderShield() {
+      const readerExp = document.getElementById('readerAppExperience');
+      const shield = document.getElementById('readerPiracyShield');
+      if (readerExp && !readerExp.classList.contains('hidden') && shield) {
+        shield.classList.remove('hidden');
+        shield.classList.add('flex');
+      }
+    }
+
+    function resumeReadingView() {
+      const shield = document.getElementById('readerPiracyShield');
+      if (shield) {
+        shield.classList.add('hidden');
+        shield.classList.remove('flex');
+        showToast('Reading view resumed.');
+      }
+    }
+
+    // Trigger on browser window blur or switching away
+    window.addEventListener('blur', triggerReaderShield);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) triggerReaderShield();
+    });
+
+    // Keyboard capture shortcut interception
+    window.addEventListener('keydown', (e) => {
+      const readerExp = document.getElementById('readerAppExperience');
+      if (!readerExp || readerExp.classList.contains('hidden')) return;
+
+      if (
+        e.key === 'PrintScreen' || e.code === 'PrintScreen' ||
+        (e.ctrlKey && ['p', 's', 'c', 'u'].includes(e.key.toLowerCase())) ||
+        (e.ctrlKey && e.shiftKey && ['i', 's', 'c'].includes(e.key.toLowerCase())) ||
+        e.key === 'F12'
+      ) {
+        e.preventDefault();
+        triggerReaderShield();
+        if (document.execCommand) {
+          try { document.execCommand('copy'); } catch(err){}
+        }
+        showToast('⚠️ Capture Restricted: RiseTheory Protected Codex');
+      }
+    });
+
+    // Context menu disabled inside reading experience
+    const readerExp = document.getElementById('readerAppExperience');
+    if (readerExp) {
+      readerExp.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        showToast('Context menu disabled for digital protection.');
+      });
+    }
+
+    let currentFontSize = 100;
+    function changeFontSize(dir) {
+      currentFontSize = Math.min(130, Math.max(85, currentFontSize + dir * 10));
+      document.getElementById('readerText').style.fontSize = `${currentFontSize}%`;
+      document.getElementById('fontSizeLabel').textContent = `${currentFontSize}%`;
+    }
+
+    let isSepiaTheme = false;
+    function toggleReaderTheme() {
+      const frame = document.getElementById('readerContentFrame');
+      const btn = document.getElementById('themeToggleBtn');
+      if (!isSepiaTheme) {
+        frame.style.backgroundColor = '#16130e';
+        frame.style.borderColor = '#382e22';
+        btn.textContent = '📜 Warm Sepia';
+        isSepiaTheme = true;
+      } else {
+        frame.style.backgroundColor = '';
+        frame.style.borderColor = '';
+        btn.textContent = '🌙 Dark Obsidian';
+        isSepiaTheme = false;
+      }
+    }
+
+    // -------------------------------------------------------------------------
+    // 8. FREE LEAD MAGNET & LEGAL COMPLIANCE MODALS
+    // -------------------------------------------------------------------------
+    function openLeadMagnetModal() {
+      const modal = document.getElementById('leadMagnetModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+    }
+
+    function closeLeadMagnetModal() {
+      const modal = document.getElementById('leadMagnetModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    function handleLeadMagnetSubmit(e) {
+      e.preventDefault();
+      closeLeadMagnetModal();
+      showToast('Chapter 1 dispatched to your email! Opening reader preview...');
+      setTimeout(() => {
+        switchView('reader');
+        launchDemoReader();
+      }, 700);
+    }
+
+    const legalContent = {
+      terms: {
+        title: 'Terms of Service',
+        body: `
+          <p><strong>1. Intellectual Property:</strong> All content, illustrations, 3D book artwork, 6x5 matrix grid, and written codex for "What Is Matrix" (Part One) are the exclusive intellectual property of RiseTheory Media & Publishing. Unauthorized reproduction, digital scraping, or screen recording is strictly prohibited.</p>
+          <p><strong>2. In-App Bookings & Digital Delivery:</strong> Upon successful transaction verification, digital credentials grant personal, non-transferable access via the RiseTheory Reader Portal. Physical book copies are dispatched via authorized logistics partners (Delhivery, BlueDart, India Post) to the address provided during checkout.</p>
+        `
+      },
+      privacy: {
+        title: 'Privacy Policy',
+        body: `
+          <p><strong>Data Confidentiality:</strong> RiseTheory respects your personal privacy. We do not sell, rent, or trade customer contact details, phone numbers, or delivery addresses with third-party data brokers.</p>
+          <p><strong>Payment Security:</strong> Payment information is processed directly through 256-bit encrypted banking endpoints compliant with RBI PCI-DSS standards. We never store raw CVV codes or payment passwords on our servers.</p>
+        `
+      },
+      refund: {
+        title: 'Refund & 100% Replacement Policy',
+        body: `
+          <p><strong>100% Free Replacement Guarantee:</strong> If your physical hardcover or paperback arrives with any transit damage (crushed corners, torn binding, ink defects), email our concierge desk at risetheory.co.in@gmail.com with a photograph. We immediately dispatch a brand-new replacement copy free of charge with zero return hassles.</p>
+        `
+      },
+      shipping: {
+        title: 'Shipping & Delivery Guidelines',
+        body: `
+          <p><strong>Fulfillment Timelines:</strong> Physical book orders are hand-inspected and dispatched from our central distribution hub in India within 24 business hours.</p>
+          <p><strong>Courier Rates:</strong> Delivery charges are dynamically calculated at checkout based on Indian PIN code zones.</p>
+          <p><strong>Registered Entity:</strong> RiseTheory Publishing • Khammam, Telangana, India 507001 • Contact: risetheory.co.in@gmail.com</p>
+        `
+      }
+    };
+
+    function openLegalModal(type) {
+      const data = legalContent[type];
+      if (!data) return;
+
+      document.getElementById('legalModalTitle').textContent = data.title;
+      document.getElementById('legalModalBody').innerHTML = data.body;
+
+      const modal = document.getElementById('legalModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+    }
+
+    function closeLegalModal() {
+      const modal = document.getElementById('legalModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 300);
+    }
+
+    // -------------------------------------------------------------------------
+    // 9. TOAST NOTIFICATION UTILITIES
+    // -------------------------------------------------------------------------
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3000);
+    }
+
+    // -------------------------------------------------------------------------
+    // 10. WINDOW ONLOAD BOOTSTRAPPER
+    // -------------------------------------------------------------------------
+    window.onload = function () {
+      initTrioParallaxPhysics();
+      const initialTab = document.getElementById('nav-showcase');
+      if (initialTab) updateLiquidIndicator(initialTab);
+      updatePriceBreakdown();
+    };
+  </script>
+
+</body>
+</html>
